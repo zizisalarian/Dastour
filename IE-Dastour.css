@@ -1,0 +1,2609 @@
+@import url("/Scripts/Calendar/calendar.css");
+@import url("/Style/Icons.css");
+@import url("/Component/Calendar/style/kamadatepicker.css");
+
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir.eot');
+    src: url('/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'), url('/fonts/vazir/Vazir.woff') format('woff'), url('/fonts/vazir/Vazir.ttf') format('truetype');
+    src: url('fonts/vazir/Farsi-Digits/Vazir-FD.eot') format('embedded-opentype'), url('fonts/vazir/Farsi-Digits/Vazir-FD.ttf') format('truetype'), url('fonts/vazir/Farsi-Digits/Vazir-FD.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir-Bold.eot');
+    src: url('/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/vazir/Vazir-Bold.woff') format('woff'), url('/fonts/vazir/Vazir-Bold.ttf') format('truetype');
+    src: url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.eot') format('embedded-opentype'), url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype'), url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir-Light.eot');
+    src: url('/fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/vazir/Vazir-Light.woff') format('woff'), url('/fonts/vazir/Vazir-Light.ttf') format('truetype');
+    src: url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.eot') format('embedded-opentype'), url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype'), url('fonts/vazir/Farsi-Digits/Vazir-Bold-FD.woff') format('woff');
+    font-weight: 300;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"),url(/Images/HomePage/GradBG.png);
+    margin: 0px;
+    font-family: Vazir;
+    unicode-bidi: bidi-override;
+    height: 100%;
+}
+
+.HomePage {
+    margin: 0 auto;
+    padding-top: 0.5vw;
+    display: table;
+    width: 70%;
+    direction: rtl;
+}
+
+    .HomePage div.ContentHead {
+        display: table;
+        width: 100%;
+    }
+
+        .HomePage div.ContentHead div {
+            display: table-cell;
+            font-size: 0px;
+        }
+
+            .HomePage div.ContentHead div.right {
+                text-align: right;
+                padding-right: 30px;
+                
+            }
+
+           .HomePage div.ContentHead div.leftHead {
+                text-align: left;
+                padding-left : 3vw;
+                
+            }
+
+            .HomePage div.ContentHead div.right img {
+                height: 8vw;
+                margin-bottom: 5px;
+            }
+
+            .HomePage div.ContentHead div.leftHead img {
+                height: 7vw;
+               
+               
+                
+            }
+
+    .HomePage div.ContentHead {
+        display: table;
+        width: 100%;
+    }
+
+    .HomePage div.MainArea {
+        position: relative;
+        width: 100%;
+        height: 27vw;
+        z-index: 0;
+        
+    }
+        .HomePage div.MainArea div {
+           
+        }
+
+        .HomePage div.MainArea:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("/Images/HomePage/BG.jpg");
+            background-position: 0px 38vw;
+            background-size: 100%;
+            opacity: 0.6;
+            border-radius: 14px;
+            z-index: -1;
+            content: '';
+        }
+
+        .HomePage div.MainArea.Majles:before {
+            background-image: url("/Images/Majles/BG.jpg");
+            opacity: 1;
+            background-position: 0px 31vw;
+        }
+
+        .HomePage div.MainArea div.Content {
+            padding: 15px;
+            z-index: 10;
+        }
+
+        .HomePage div.MainArea.Majles div.Content {
+            background-image: linear-gradient(to bottom, rgba(0, 87, 25, 0.69),rgba(0, 0, 0, 0.00));
+            border-radius: 10px;
+            min-height: 20vw;
+        }
+
+        .HomePage div.MainArea.Majles div.SearchPanel {
+            display: table;
+            width: 10px;
+        }
+
+            .HomePage div.MainArea.Majles div.SearchPanel .Cell {
+                vertical-align: middle;
+            }
+             .HomePage div.MainArea.Majles div.SearchPanel div.GolTop {
+                height: 2vw;
+                display: block;
+                padding-right: 1vw;
+            }
+
+            .HomePage div.MainArea.Majles div.SearchPanel div.GolBottom {
+                display: table;
+    float:left;
+    padding-left: 4vw;
+            }
+            .HomePage div.MainArea.Majles div.SearchPanel div.GolTop img {
+                height: 2vw;
+                display: block;
+                
+            }
+
+            .HomePage div.MainArea.Majles div.SearchPanel div.GolBottom img {
+                width:auto;
+                height: 3vw;
+                
+                
+                
+            }
+
+        .HomePage div.MainArea.Majles .NotFound {
+            display: block;
+            margin: 0 auto;
+            color: #FFB700;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14pt;
+            background-color: rgba(0, 36, 6, 0.51);
+            width: 30%;
+            display: none;
+        }
+
+        .HomePage div.MainArea.Majles div.SearchPanel input {
+            margin: 0px 0.2vw;
+            background-color: rgba(255, 255, 255, 0.37);
+            border-radius: 0.5vw;
+            font-size: 1.2vw;
+            padding: 0.25vw;
+            box-sizing: content-box;
+            display: table-cell;
+            vertical-align: middle;
+            width: 20vw;
+            border: 1px solid #bd9e20;
+            color: rgb(255, 229, 33);
+            font-family: vazir;
+            text-align: center;
+        }
+
+
+
+
+        .HomePage div.MainArea div.SearchPanel {
+            display: table;
+            margin: 0 auto;
+            
+          
+            
+            
+            
+            
+        }
+
+            .HomePage div.MainArea div.SearchPanel .Cell {
+                display: table-cell;
+                vertical-align:middle;
+                
+            }
+
+.showborder {
+    border: 1px solid;
+}
+.HomePage div.MainArea div.SearchPanel div.InputPanel {
+    
+    display:table;
+    
+}
+
+.HomePage div.MainArea div.SearchPanel div.GolTop img {
+    -ms-interpolation-mode: bicubic;
+    float: right;
+    height: 3.1vw;
+    width:auto;
+    
+}
+
+.HomePage div.MainArea div.SearchPanel div.GolBottom img {
+    -ms-interpolation-mode: bicubic;
+    float: left;
+    height: 4.2vw;
+    width:auto;
+    
+}
+
+.HomePage div.MainArea div.SearchPanel div.GolTop {
+    display: table;
+    padding-right: 0vw;
+    
+}
+
+.HomePage div.MainArea div.SearchPanel div.GolBottom {
+    display: table;
+    float:left;
+    padding-left: 4vw;
+    
+        
+}
+
+.HomePage div.MainArea div.SearchPanel input:before {
+    background-image: url(/Images/HomePage/GolGold.svg);
+    background-size: 150%;
+    content: '';
+}
+
+
+    /*Tanghih*/
+        .HomePage div.MainArea.Tanghih div.InputPanel {
+            position: relative;
+        }
+
+.SearchTanghih {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid;
+}
+
+.SearchTanghihResult {
+    position: absolute;
+    background-color: rgba(255, 234, 72, 0.9);
+    display: none;
+    color: rgba(124, 1, 1, 0.8);
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+
+    .SearchTanghihResult ul {
+        list-style-type: none;
+        text-align: right;
+        direction: rtl;
+        padding: 8px;
+        font-size: 11pt;
+    }
+
+        .SearchTanghihResult ul li {
+            cursor: pointer;
+        }
+
+            .SearchTanghihResult ul li ul {
+                list-style: square;
+                list-style-position: inside;
+                padding-right: 20px;
+                font-size: 10pt;
+            }
+
+
+            .SearchTanghihResult ul li:hover {
+                background-color: rgba(116, 25, 0, 0.07);
+            }
+
+.TanghihSearch {
+    font-family: Vazir;
+    font-size: 10pt;
+    color: #FFE952 !important;
+    border: 1px solid rgba(255, 199, 3, 0.93) !important;
+    width: 38vw;
+    background-color: rgba(255, 243, 107, 0.09);
+    box-shadow: 0px 0px 5px rgba(255, 237, 94, 0.61) inset;
+}
+
+.SearchBox .TanghihSearch::before {
+    content: "\f002";
+    font-family: 'Awesome' !important;
+    font-size: 12pt;
+}
+
+.SearchBox.TanghihSearch::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 233, 82, 0.65);
+}
+
+.SearchBox::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.75;
+}
+
+.SearchBox:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.75;
+}
+.HomePage div.MainArea.Tanghih div.Content {
+    background-image: linear-gradient(to bottom, rgba(122, 65, 1, 0.8),rgba(0, 0, 0, 0.00));
+    border-radius: 10px;
+    min-height: 20vw;
+}
+
+.HomePage div.MainArea.Tanghih div.SearchPanel div.GolTop {
+    display: table;
+    padding-right: 1vw;
+}
+
+.HomePage div.MainArea.Tanghih div.SearchPanel div.GolBottom {
+    display: table;
+    
+    float: left;
+    padding-left: 1vw;
+}
+
+.HomePage div.MainArea.Tanghih div.SearchPanel div.GolTop img {
+    float: right;
+    display: block;
+    height: 2.5vw;
+}
+
+.HomePage div.MainArea.Tanghih div.SearchPanel div.GolBottom img {
+    height: 3.5vw;
+    display: block;
+}
+
+.HomePage div.MainArea.Tanghih .NotFound {
+    display: block;
+    margin: 0 auto;
+    color: #FFB700;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14pt;
+    background-color: rgba(0, 36, 6, 0.51);
+    width: 30%;
+    display: none;
+}
+
+.HomePage div.MainArea.Tanghih div.SearchPanel input {
+    margin: 0px 0.2vw;
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    padding: 0.25vw;
+    box-sizing: content-box;
+    display: table-cell;
+    vertical-align: middle;
+    width: 35vw;
+    border: 1px solid #bd9e20;
+    color: rgb(109, 64, 0);
+    font-family: vazir;
+    text-align: center;
+}
+
+/*End Tanghih*/
+
+
+
+input.ClearPlaceHoder::-moz-placeholder {
+    opacity: 0.9 !important;
+}
+
+.MajlesInput {
+    background-color: rgba(25, 81, 0, 0.6) !important;
+}
+
+
+.HomePage div.MainArea div.SearchPanel input {
+    margin: 0px 0.2vw;
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    padding: 0.25vw;
+    box-sizing: content-box;
+    display: table-cell;
+    vertical-align: middle;
+    width: 35vw;
+    border: 1px solid #bd9e20;
+    color: #003c77;
+    font-family: vazir;
+}
+
+
+
+
+
+
+.HomePage div.MainArea div.SearchPanel button.SearchButton {
+    background-color: rgba(246, 199, 0, 0.90);
+    padding: 0.5vw 0.6vw;
+    border-radius: 0.4vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0vw 0.2vw;
+    border: 1px solid #BD9E20;
+    cursor: pointer;
+}
+
+    .HomePage div.MainArea div.SearchPanel button.SearchButton:before {
+        content: "\f002";
+        font-family: 'Awesome' !important;
+        font-size: 1.3vw;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+.HomePage div.MainArea div.SearchPanel button:hover {
+    background-color: rgba(255, 206, 0, 0.9);
+}
+
+
+.HomePage div.MainArea img.Appname {
+    width: 17%;
+    margin: 0 auto;
+    display: block;
+}
+
+.HomePage div.MainArea img.Dbname {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.HomePage div.ContentFooter {
+    display: table;
+    width: 100%;
+}
+
+    .HomePage div.ContentFooter div {
+        display: table-cell;
+        font-size: 0px;
+    }
+
+        .HomePage div.ContentFooter div.right {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .HomePage div.ContentFooter div.left {
+            vertical-align: top;
+            width: 100%;
+            text-align: left;
+            padding-left: 1.8vw;
+            position: relative;
+        }
+
+        .HomePage div.ContentFooter div.right img {
+            width:auto;
+            height: 5.5vw;
+            margin-bottom: 5px;
+            z-index: 5;
+        }
+
+        .HomePage div.ContentFooter div.left div.LIcon {
+            position: absolute;
+            white-space: nowrap;
+            float: left;
+            width: 7.0vw;
+            font-family: Vazir;
+            font-size: 1vw;
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5vw;
+            border-radius: 0.7vw;
+            background-color: rgba(255, 255, 255, 0.67);
+            border: none;
+            margin-top: -2.5vw;
+            z-index: 5;
+            box-shadow: 0px 0px 5px rgba(3, 91, 107, 0.33);
+            cursor: pointer;
+        }
+
+            .HomePage div.ContentFooter div.left div.LIcon:hover {
+                box-shadow: 0px 0px 5px rgba(3, 91, 107, 0.63);
+            }
+
+
+div.LIcon img {
+    height: 3vw;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.HomePage div.ContentFooter div.left div.Telia {
+    font-family: Vazir;
+    font-size: 1.1vw;
+    padding-top: 5.5vw;
+    color: rgba(0, 78, 99, 0.91);
+    float: left;
+    margin-bottom: 3vw;
+}
+
+    .HomePage div.ContentFooter div.left div.Telia span {
+        font-weight: bold;
+        font-size: inherit;
+        display: block;
+        letter-spacing: 6px;
+    }
+
+.Blue {
+    color: #00719d;
+    left: 29.7vw;
+}
+
+.Gold {
+    color: #846E00;
+    left: 20.2vw;
+}
+
+.LightRed {
+    color: #ce0000;
+    left: 10.8vw;
+}
+
+.DarkRed {
+    color: #890038;
+    left: 1.5vw;
+}
+
+body .home {
+    background-image: url('/Images/HomeBack.svg');
+    direction: rtl;
+}
+
+
+body .Header {
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.45);
+    background-image: url('/Images/HeaderGol.svg');
+    background-repeat: no-repeat;
+    background-position: center 43%;
+    background-size: 100%;
+    border: 2px solid #f3f3f3;
+    border-top: 0px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px rgba(3, 91, 107, 0.73);
+    z-index: 5;
+    text-align: center;
+    direction: rtl;
+    display: block;
+}
+
+.Header div.SearchPanel {
+    display: block;
+}
+
+    .Header div.SearchPanel div.cell {
+        float: right;
+        padding-right: 5px;
+    }
+
+.TableCell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px;
+    width: 100%;
+}
+
+    .TableCell.Search {
+        text-align: right;
+    }
+
+        .TableCell.Search .HeaderLink {
+            display: table;
+        }
+
+            .TableCell.Search .HeaderLink img {
+                width: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                display: table-cell;
+            }
+
+            .TableCell.Search .HeaderLink a {
+                display: table-cell;
+                font-family: Vazir;
+                font-size: 14px;
+                color: #00148C;
+                text-decoration: none;
+            }
+
+button.SearchButton {
+    border: 0px solid #FFB700;
+    padding: 6px 6px 6px 6px;
+    border-radius: 6px;
+    background-color: #FFB700;
+    cursor: pointer;
+}
+
+    button.SearchButton::before {
+        content: "\e986";
+        font-family: 'IcoMoon-Free' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-size: 1.5vw;
+        color: #ffffff;
+    }
+
+
+
+
+.TableCell.SiteName {
+}
+
+div .Header img.eslim {
+    width: 7vw;
+}
+
+div .Header img.SiteName {
+    width: 12vw;
+}
+
+input[type="text"].SearchPanel {
+    border: 1px solid #d5d5d5;
+    width: 29vw;
+    height: 30px;
+}
+
+input.search {
+    border: 1px solid #adadad;
+    font-size: 14pt;
+    color: #022d6b;
+    height: 25px;
+    border-radius: 6px;
+    width: 25vw;
+    direction: rtl;
+    font-family: Vazir;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.97);
+    display: inline-block;
+}
+
+.iconSearch.inPage {
+    padding: 6px;
+    font-size: 14pt;
+    border: 2px solid rgba(255, 255, 255, 0.97);
+}
+
+input.SearchButton {
+    border: 1px solid #FFB700;
+    height: 20px;
+    border-radius: 6px;
+    width: 20px;
+    direction: rtl;
+    font-family: Vazir;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+div.ResultArea {
+    direction: rtl;
+    position: relative;
+}
+
+Ul.FloatTab {
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+    Ul.FloatTab li {
+        display: block;
+        background-color: rgba(235, 223, 0, 0.69);
+        font-size: 15px;
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 6px;
+        color: #003589;
+        cursor: pointer;
+        position: fixed;
+        white-space: nowrap;
+        padding-left: 20px;
+    }
+
+        ul.FloatTab li.Number {
+            top: 22%;
+            margin-right: -40px;
+        }
+
+        ul.FloatTab li.Sort {
+            top: 27%;
+            margin-right: -40px;
+        }
+
+
+            Ul.FloatTab li.Sort:before {
+                content: '\f0dc';
+                font-family: 'Awesome' !important;
+                color: rgba(0, 16, 92, 0.81);
+                padding-left: 18px;
+                padding-right: 6px;
+            }
+
+        Ul.FloatTab li.Number:before {
+            content: '\f03a';
+            font-family: 'Awesome' !important;
+            color: rgba(0, 16, 92, 0.81);
+            padding-left: 10px;
+            padding-right: 3px;
+        }
+
+        Ul.FloatTab li:hover {
+            background-color: rgba(235, 201, 0, 0.69);
+        }
+
+div.menubar {
+    margin: 0px auto;
+    direction: rtl;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+div.menubarLabel {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 3px;
+    border-right: 2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3;
+    border-bottom: 2px solid #f3f3f3;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 130px;
+    height: 30px;
+    background: linear-gradient(to top,rgba(0, 91, 159, 0.71),rgba(0, 179, 247, 0.61));
+    z-index: 1;
+    cursor: pointer;
+    font-family: vazir;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    div.menubarLabel.Yellow {
+        background-color: #FFB700;
+    }
+
+div.GreenLabel.Reverse {
+    background-color: #00bb04;
+    background: linear-gradient(#47d225,#21a401) !important;
+}
+
+div.GreenLabel {
+    background-color: #00bb04;
+    background: linear-gradient(#21a401,#47d225);
+}
+
+
+div .DataPresent {
+    background-color: rgba(229, 232, 166, 0.31);
+    border-radius: 6px;
+    border: 1px solid rgba(176, 181, 69, 0.51);
+    margin: 0 auto;
+    padding: 10px;
+    display: table;
+    direction: rtl;
+    font-family: Vazir;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+div .DataItemPresent {
+    background-color: rgba(166, 232, 175, 0.71);
+    border-radius: 6px;
+    border: 1px solid rgba(96, 176, 107, 0.71);
+    margin: 0 auto;
+    padding: 10px;
+    display: table;
+    direction: rtl;
+    font-family: Vazir;
+    font-size: 10pt;
+    margin-bottom: 20px;
+}
+
+    div .DataItemPresent.LetterItem {
+        width: 700px;
+        text-align: justify;
+    }
+
+.DataItemPresent.LetterItem div.Row {
+    display: table-row;
+}
+
+.DataItemPresent.LetterItem div.Cell {
+    display: table-cell;
+    width: 100%;
+}
+
+.DataItemPresent.LetterItem div.Reciver {
+    text-align: left;
+    font-weight: bold;
+}
+
+.DataItemPresent.LetterItem div.Sender {
+    font-weight: bold;
+}
+
+div .DataForm {
+    background-color: rgba(156, 217, 217, 0.71);
+    border-radius: 6px;
+    border: 1px solid rgba(39, 104, 104, 0.71);
+    margin: 0 auto;
+    padding: 10px;
+    display: table;
+    direction: rtl;
+    font-family: Vazir;
+    
+}
+
+    div .DataForm .Caption {
+        display: table-caption;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    div .DataForm .Row {
+        display: table-row;
+    }
+
+    div .DataForm.Cell {
+        display: table-cell;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        min-width: 100px;
+        border-radius: 2px;
+        vertical-align: middle;
+    }
+
+textarea {
+    direction: rtl;
+    font-family: Vazir;
+}
+
+input[type="text"].SearchBox {
+    font-family: Vazir;
+    font-size: 10pt;
+    color: #035b6b;
+    border-radius: 6px;
+    border: 0px;
+    direction: rtl;
+    padding: 4px;
+    width: 30vw;
+}
+
+input[type="button"].SearchButton {
+    background-color: #15879c;
+    border: 1px solid #035b6b;
+    border-radius: 4px;
+    padding: 3px 15px 3px 15px;
+    font-family: Vazir;
+    font-size: 10pt;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.ResultBox {
+    font-family: Vazir;
+    font-size: 10pt;
+    padding: 0;
+    list-style-type: none;
+}
+
+    ul.ResultBox li.MP .cell {
+        display: table-cell;
+        vertical-align: top;
+        padding-left: 5px;
+    }
+
+    ul.ResultBox li.MP {
+        font-weight: bold;
+        color: #000d56;
+        background-color: rgba(255, 255, 255, 0.57);
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        padding: 5px;
+        padding-right: 10px;
+        box-shadow: 0px 0px 3px rgba(3, 91, 107, 0.33);
+    }
+
+        ul.ResultBox li.MP a {
+            color: #0021c1;
+        }
+
+            ul.ResultBox li.MP a:hover {
+                color: #00147a;
+            }
+
+        ul.ResultBox li.MP div.LawYear {
+            font-weight: normal;
+            color: #003a78;
+        }
+
+        ul.ResultBox li.MP div.LawItem {
+            padding-right: 5px;
+            font-size: 12pt;
+            color: #00bd0a;
+        }
+
+    ul.ResultBox li ul {
+        font-weight: normal;
+        list-style: none;
+        padding-right: 20px;
+    }
+
+        ul.ResultBox li ul li {
+            padding: 2px;
+        }
+
+            ul.ResultBox li ul li:before {
+                content: '';
+                display: inline-block;
+                height: 0;
+                width: 0;
+                margin-left: 5px;
+                border-right: 5px solid #FFB700;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+            }
+
+ul.Pagination {
+    text-align: center;
+}
+
+    ul.Pagination li {
+        list-style-type: none;
+        display: inline-block;
+        background-color: rgba(222, 190, 0, 0.51);
+        border-top: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5;
+        border-left: 1px solid #d5d5d5;
+        background: linear-gradient(to bottom,#f3f3f3,#ededed);
+        font-family: Vazir;
+        border-radius: 0px;
+        font-weight: bold;
+        padding-right: 0.7vw;
+        padding-left: 0.5vw;
+        padding-top: 0.2vw;
+        padding-bottom: 0.1vw;
+    }
+
+        ul.Pagination li.Off {
+            display: none;
+        }
+
+        ul.Pagination li.Next a {
+            width: 100%;
+        }
+
+        ul.Pagination li.Next:hover {
+            background: linear-gradient(to bottom,rgba(0, 140, 193, 0.41),rgba(0, 109, 150, 0.41));
+        }
+
+        ul.Pagination li.Next:before {
+            font-family: 'Awesome' !important;
+            color: rgba(0, 16, 92, 0.81);
+            content: "\f053";
+        }
+
+        ul.Pagination li.Next {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        ul.Pagination li.Previous:before {
+            font-family: 'Awesome' !important;
+            color: rgba(0, 16, 92, 0.81);
+            content: "\f054";
+        }
+
+        ul.Pagination li.Previous:hover {
+            background: linear-gradient(to bottom,rgba(0, 140, 193, 0.41),rgba(0, 109, 150, 0.41));
+            color: #f3f3f3;
+        }
+
+        ul.Pagination li.Previous {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-left: 5px;
+            padding-right: 15px;
+            border-right: 1px solid #c6c6c6;
+        }
+
+        ul.Pagination li.selectedPage {
+            background: linear-gradient(to bottom,rgba(0, 140, 193, 0.61),rgba(0, 109, 150, 0.61));
+        }
+
+        ul.Pagination li a {
+            color: #002a6d;
+            padding: 2px;
+        }
+
+.PaginationBox {
+    margin-bottom: 40px;
+}
+
+.SearchSetting {
+    font-family: Vazir;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    background: linear-gradient(to bottom,rgba(0, 91, 159, 0.71),rgba(0, 179, 247, 0.61));
+    display: none;
+    padding: 5px;
+    direction: rtl;
+    position: relative;
+}
+
+
+
+
+    .SearchSetting .Box {
+        font-size: 10pt;
+        color: rgb(0, 60, 83);
+        background-color: rgba(255, 255, 255, 0.22);
+        padding: 3px;
+        border-radius: 6px;
+        margin-bottom: 3px;
+        display: block;
+        border: 0px solid;
+        text-align: center;
+    }
+
+        .SearchSetting .Box span {
+            display: inline-flex;
+            margin: 2px;
+            white-space: nowrap;
+        }
+
+            .SearchSetting .Box span.area {
+                display: inline-block;
+                padding: 1px;
+            }
+
+
+
+
+
+    .SearchSetting input {
+        border-radius: 4px;
+        border: none;
+        padding: 2px;
+        padding-right: 2px;
+        font-family: vazir;
+        margin: 1px;
+    }
+
+    .SearchSetting select {
+        border-radius: 4px;
+        border: 2px solid #fff;
+        background-color: #fcffbf;
+        color: rgb(0, 49, 78);
+        padding: 1px;
+        margin: 1px;
+        font-family: vazir;
+        font-size: 10pt;
+    }
+
+    .SearchSetting input.Text {
+        font-size: 11pt;
+        direction: rtl;
+    }
+
+
+
+    .SearchSetting input.datePiker {
+        font-family: Vazir;
+        font-size: 10pt;
+        direction: ltr;
+        width: 100px;
+        text-align: center;
+    }
+
+
+
+@media (max-width:480px) {
+    .SearchSetting .Box span.label {
+        display: none;
+    }
+
+    .SearchSetting input.Text {
+        width: 70%;
+    }
+
+        .SearchSetting input.Text.fullWidth {
+            font-size: 11pt;
+            width: 17em;
+            direction: rtl;
+        }
+}
+
+@media (min-width:480px) {
+    .SearchSetting .Box span.label {
+        display: inline-block;
+    }
+
+    datePiker .SearchSetting input.Text::-webkit-input-placeholder, .SearchSetting input.datePiker::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        opacity: 0;
+    }
+
+    .SearchSetting input.Text:-moz-placeholder, .SearchSetting input.datePiker:-moz-placeholder { /* Firefox 19+ */
+        opacity: 0;
+    }
+
+    .SearchSetting input.Text::-moz-placeholder, .SearchSetting input.datePiker::-moz-placeholder { /* Firefox 18- */
+        opacity: 0;
+    }
+
+    .SearchSetting input.Text:-ms-input-placeholder, .SearchSetting input.datePiker::-moz-placeholder { /* IE 10+ */
+        opacity: 0;
+    }
+
+    .SearchSetting input.Text.fullWidth {
+        font-size: 10pt;
+        width: 15em;
+        direction: rtl;
+    }
+}
+
+div.advSearchLabel {
+    margin: 0px auto;
+    position: relative;
+    padding-top: 3px;
+    border-right: 2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3;
+    border-bottom: 2px solid #f3f3f3;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 130px;
+    height: 30px;
+    background-color: rgba(0, 140, 193, 0.61);
+    z-index: 1;
+    cursor: pointer;
+    font-family: vazir;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#TabMenu {
+    direction: rtl;
+    position: relative;
+    padding-right: 3px;
+    display: flex;
+}
+
+    #TabMenu .TabItem {
+    }
+
+        #TabMenu .TabItem .label {
+            font-family: Vazir;
+            font-weight: bold;
+            font-size: 11pt;
+            padding: 10px 20px 10px 20px;
+            background-color: rgba(255, 255, 255, 0.21);
+            cursor: pointer;
+        }
+
+            #TabMenu .TabItem .label a {
+                color: #002a6d;
+            }
+
+        #TabMenu .TabItem.selected .label a {
+            color: #0196d1;
+        }
+
+        #TabMenu .TabItem:first-child .label {
+            border-top-right-radius: 10px;
+        }
+
+    #TabMenu:last-child .label {
+        background-color: red;
+    }
+
+    #TabMenu .TabItem .label:hover {
+        background-color: rgba(255, 255, 255, 0.61);
+    }
+
+    #TabMenu .TabItem .bline {
+        border-top: 3px solid #d5d5d5;
+        height: 3px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+        #TabMenu .TabItem .bline span {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+        }
+
+    #TabMenu .TabItem.selected .bline {
+        border-top: 5px solid #0196d1;
+        height: 3px;
+        padding-top: 6px;
+        text-align: center;
+    }
+
+        #TabMenu .TabItem.selected .bline span {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 11px solid #0196d1;
+            border-left: 11px solid transparent;
+            border-right: 11px solid transparent;
+        }
+
+    #TabMenu .TabItem::after {
+    }
+
+    #TabMenu .line {
+        height: 5px;
+        background-color: #d5d5d5;
+        position: absolute;
+        bottom: 9px;
+        width: 100%;
+        z-index: -1;
+        padding-right: 1px;
+    }
+
+div.SearchBox {
+}
+
+
+
+div.LawContentArea {
+    width: 99%;
+    font-family: Vazir;
+    margin: 0 auto;
+    display: table;
+    box-sizing: border-box;
+    direction: rtl;
+    border-spacing: 10px;
+}
+
+    div.LawContentArea .LawContent {
+        border: 1px solid;
+        border-radius: 6px;
+        display: table-cell;
+        border: 1px solid #ffffff;
+        background-image: linear-gradient(to bottom,rgba(229, 242, 255, 0.82),rgba(255, 255, 255, 0.70));
+        border-radius: 6px;
+        vertical-align: top;
+        padding: 8px;
+    }
+
+    div.LawContentArea .LawTree {
+        border: 1px solid #ffffff;
+        background-image: linear-gradient(to right,rgba(255, 255, 255, 0.81),rgba(211, 226, 235, 0.61));
+        border-radius: 6px;
+        width: 30%;
+        overflow: hidden;
+        padding: 8px;
+        display: table-cell;
+    }
+
+    div.LawContentArea .LawContent h1 {
+        display: block;
+        color: #00b124;
+        font-family: Vazir;
+        font-size: 14pt;
+        text-indent: 50px;
+    }
+
+    div.LawContentArea .LawContent p.Context {
+        text-indent: 40px;
+        padding-right: 10px;
+        text-align: justify;
+        font-size: 10pt;
+    }
+
+div.LawPath {
+    color: #003589;
+}
+
+    div.LawPath a {
+        color: #003589;
+        vertical-align: middle;
+        font-size: 10.4pt;
+        text-indent: 10px;
+    }
+
+    div.LawPath span.RelatedInPath {
+        color: #ea0032 !important;
+        font-size: 9pt !important;
+        vertical-align: super;
+    }
+
+div.LawContentArea .LawContent .LawPath small {
+    color: #d10040;
+    font-size: 8pt;
+    text-indent: 10px;
+}
+
+div.LawContentArea .LawContent button {
+    display: none;
+}
+
+div.LawContentArea div.LawChild h2 {
+    font-size: 10pt;
+    padding-right: 50px;
+}
+
+    div.LawContentArea div.LawChild h2 .label {
+        color: #00BD0A;
+    }
+
+    div.LawContentArea div.LawChild h2 .context {
+        color: rgb(0, 27, 155);
+        font-weight: lighter;
+    }
+
+div.LawContentArea div.LawSection {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+    div.LawContentArea div.LawSection:empty {
+        display: none;
+    }
+
+    div.LawContentArea div.LawSection .Content {
+        padding-right: 20px;
+    }
+
+        div.LawContentArea div.LawSection .Content:empty {
+            display: none;
+        }
+
+    div.LawContentArea div.LawSection .EffectOn {
+        background-color: rgba(232, 0, 21, 0.84);
+        display: inline-block;
+        border-radius: 4px;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 9pt;
+        color: #fff;
+    }
+
+    div.LawContentArea div.LawSection .Affected {
+        background-color: rgba(0, 109, 151, 0.81);
+        display: inline-block;
+        border-radius: 4px;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 9pt;
+        color: #fff;
+    }
+
+
+    div.LawContentArea div.LawSection .path {
+        background-color: rgba(213, 213, 213, 0.43);
+        font-size: 9pt;
+        color: #646464;
+        border-radius: 4px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+div.LawContent div.LawLetter {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.LawLetter .Letter {
+    width: 90%;
+    text-align: justify;
+    font-size: 10pt;
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 2px dashed rgba(250, 254, 255, 0.60);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: #003589;
+}
+
+.Letter div.Row {
+    display: table-row;
+}
+
+.Letter div.Cell {
+    display: table-cell;
+    width: 100%;
+}
+
+.Letter div.Reciver {
+    text-align: left;
+    font-weight: bold;
+}
+
+.Letter div.Sender {
+    font-weight: bold;
+}
+
+
+
+.SectionHeader {
+    background-color: #FFB700;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d39802' fill-opacity='0.51' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    padding: 4px 18px 4px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: -1px 1px 2px rgba(107, 107, 107, 0.7);
+    margin: 5px;
+}
+
+.Tab {
+    font-family: Vazir;
+    font-size: 10pt;
+    display: table;
+    margin: 0 auto;
+    border-spacing: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .Tab div {
+        font-size: 10pt;
+        font-family: inherit;
+        display: table-cell;
+    }
+
+    .Tab .TabLabel {
+        background-image: linear-gradient(to bottom,rgba(0, 140, 193, 0.41),rgba(255, 255, 255, 0.17));
+        border-top: 1px solid rgba(0, 140, 193, 0.91);
+        border-right: 1px solid rgba(0, 140, 193, 0.91);
+        border-left: 1px solid rgba(0, 140, 193, 0.91);
+        border-bottom: 1px solid rgba(0, 140, 193, 0.91);
+        color: #003589;
+        padding: 4px 30px 4px 30px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 10px;
+        white-space: nowrap;
+        box-shadow: 0px -2px 2px rgba(177, 177, 177, 0.5);
+    }
+
+    .Tab div.TabLine {
+        border-bottom: 1px solid rgba(0, 140, 193, 0.91);
+    }
+
+.rightOfTab {
+    width: 50px;
+}
+
+.Tabs {
+    position: relative;
+}
+
+.Vtab {
+    position: absolute;
+    left: 0px;
+    -moz-transform: rotate(90deg);
+    border: 1px solid;
+    border-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.GhavaninTreeLabel {
+    background-image: linear-gradient(to bottom,rgba(204, 175, 0, 0.69),rgba(255, 255, 255, 0.17));
+    border-top: 1px solid rgba(0, 140, 193, 0.91);
+    border-right: 1px solid rgba(0, 140, 193, 0.91);
+    border-left: 1px solid rgba(0, 140, 193, 0.91);
+}
+
+
+
+.LawExtraDataIcons {
+    display: inline-flex;
+    padding-right: 25px;
+}
+
+
+    .LawExtraDataIcons .LawIcon {
+        float: right;
+        font-family: 'Awesome' !important;
+        color: rgba(255, 255, 255, 0.97);
+        font-size: 18pt;
+        font-weight: lighter;
+        background-color: #F23A59;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 6px 9px;
+        cursor: pointer;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .LawExtraDataIcons span.LawIconText {
+        font-family: Vazir;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.97);
+        font-size: 11pt;
+        height: 0px;
+        padding: 3px;
+        padding-right: 8px;
+        display: none;
+    }
+
+.pan {
+    background-image: linear-gradient(to bottom,rgb(120, 196, 237),rgba(151, 237, 228, 0.91));
+    display: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 98%;
+    padding-bottom: 20px;
+}
+
+
+.Icon-Shenasname:before {
+    content: "\f15c";
+}
+
+.Icon-Letter:before {
+    content: "\f0e0";
+}
+
+.Icon-File:before {
+    content: "\f0c6";
+}
+
+.LawExtraDataIcons .LawIcon.Icon-Selected {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(120, 196, 237);
+}
+
+.LawExtraDataIcons .LawIcon.Icon-deSelected {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Text-Shenasname:before {
+    content: "شناسنامه";
+}
+
+.Text-Letter:before {
+    content: "نامه‌های پیوست";
+}
+
+.Text-File:before {
+    content: "فایل‌های پیوست";
+}
+
+ul.Shenasnameh {
+    list-style: none;
+}
+
+    ul.Shenasnameh li {
+        text-indent: -34px;
+    }
+
+        ul.Shenasnameh li span {
+            font-size: 11pt;
+        }
+
+            ul.Shenasnameh li span:first-child {
+                font-weight: bold;
+                color: #003589;
+            }
+
+            ul.Shenasnameh li span:last-child {
+                padding-right: 3px;
+            }
+
+        ul.Shenasnameh li a:before {
+            font-family: "Awesome" !important;
+            content: "\f0fe";
+            color: #00468a;
+            font-size: 12pt;
+        }
+
+.pan.shenasnameh {
+    padding-right: 20px;
+}
+
+.shenasnameh .TasvibItem {
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.71);
+    color: #003589;
+    display: table;
+    padding: 3px 12px;
+    border-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+    .shenasnameh .TasvibItem span.Marjatasvib {
+        color: #02BF00;
+    }
+
+
+
+
+
+
+
+
+
+
+
+#SelectedTerm {
+    list-style: none;
+    direction: rtl;
+}
+
+    #SelectedTerm li {
+        background-color: rgba(251, 238, 156, 0.69);
+        color: rgba(0, 104, 143, 0.91);
+        font-family: Vazir;
+        display: inline-block;
+        margin: 3px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+        #SelectedTerm li span:before {
+            font-family: 'Awesome' !important;
+            content: '\f00d';
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+.Thesaurus {
+    width: 840px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    direction: rtl;
+    border-radius: 8px;
+    padding: 10px;
+    height: 800px;
+    border-spacing: 10px;
+    box-shadow: 0px 0px 4px rgba(3, 91, 107, 0.73);
+}
+
+    .Thesaurus div.Pan {
+        display: table-cell;
+    }
+
+        .Thesaurus div.Pan div.Head {
+            background-color: rgba(255, 183, 0, 0.54);
+            border-radius: 7px;
+            font-family: Vazir;
+            color: #926900;
+            padding: 5px;
+            font-size: 14pt;
+            font-weight: bolder;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+.Head.ThesaurusSearch input.SearchBox {
+    font-size: 12pt !important;
+}
+
+ul.CheckBoxList {
+    direction: rtl;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+    ul.CheckBoxList li {
+        font-family: Vazir;
+        font-size: 10pt;
+    }
+
+        ul.CheckBoxList li span:first-child {
+            font-weight: bold;
+        }
+
+button.AddToRight {
+    padding: 10px 13px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: rgba(0, 140, 193, 0.10);
+    cursor: pointer;
+}
+
+    button.AddToRight:before {
+        font-family: 'Awesome' !important;
+        color: rgba(0, 140, 193, 0.91);
+        content: "\f053";
+        font-size: 16pt;
+    }
+
+    button.AddToRight:hover {
+        font-weight: bold;
+        background-color: rgba(0, 140, 193, 0.05);
+    }
+
+.Table {
+    display: table;
+    direction: rtl;
+    border-spacing: 10px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.NoBorderSpace {
+    border-spacing: 0px !important;
+}
+
+.Table .cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.W80 {
+    width: 80%;
+}
+
+
+.W70 {
+    width: 70%;
+}
+
+.W60 {
+    width: 60%;
+}
+
+.W40 {
+    width: 40%;
+}
+
+.W30 {
+    width: 30%;
+    overflow: hidden;
+}
+
+.Fullcell {
+    width: 100%;
+}
+
+.vAlignMiddle {
+    vertical-align: middle !important;
+}
+
+.TagList {
+    list-style-type: none;
+}
+
+    .TagList li {
+        font-family: Vazir;
+        display: block;
+        margin: 3px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding-right: 5px;
+        padding-left: 15px;
+    }
+
+    .TagList.Inline li {
+        display: inline-block;
+    }
+
+    .TagList.Green li {
+        background-color: rgba(163, 255, 145, 0.85);
+        color: #32981C;
+    }
+
+    .TagList li a {
+        background: none;
+        border: 0px;
+        cursor: pointer;
+    }
+
+        .TagList li a:before {
+            font-family: 'Awesome' !important;
+            content: '\f00d';
+            color: #ad0000;
+            padding-left: 5px;
+            font-size: 10pt;
+        }
+
+    .TagList.Green li a:before {
+        color: #1c6c00;
+        padding-left: 10px;
+        padding-right: 5px;
+        cursor: pointer;
+    }
+
+.GeneralBox {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Vazir;
+    font-size: 10pt;
+    margin-bottom: 5px;
+}
+
+.Head {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    min-height: 40px;
+    vertical-align: middle;
+    display: block;
+}
+
+.BlueBG {
+    background-color: rgba(0, 140, 193, 0.08) !important;
+    border-color: #0196d1 !important;
+    color: #003589;
+}
+
+.GreenBG {
+    background-color: rgba(46, 204, 36, 0.1) !important;
+    border-color: #4CE452 !important;
+    color: #11AE08;
+}
+
+    .GreenBG input[type="button"] {
+        background-color: rgba(192, 255, 48, 0.5);
+        border: 1px solid rgba(70, 108, 0, 0.49);
+        border-radius: 5px;
+        padding: 7px 12px;
+        font-family: Vazir;
+        color: rgb(70, 108, 0);
+        font-size: 12pt;
+        cursor: pointer;
+    }
+
+        .GreenBG input[type="button"]:hover {
+            background-color: rgba(229, 255, 169, 0.40);
+        }
+
+    .GreenBG ul li {
+        color: rgba(0, 56, 170, 1);
+    }
+
+
+.GeneralBox select {
+    padding: 5px;
+    font-family: Vazir;
+    background: linear-gradient(to bottom,#f3f3f3,rgba(255, 255, 255, 0.97));
+    border: 1px solid #0196d1;
+    border-radius: 5px;
+}
+
+.LibraryContainer {
+    padding-top: 2vw;
+    overflow: hidden;
+    padding-right: 3vw;
+}
+
+.Library {
+    width: 65%;
+    margin: 0 auto;
+    counter-reset: qa;
+    list-style: none;
+}
+
+    .Library li {
+        margin-bottom: 5px;
+    }
+
+        .Library li div.RefItem {
+            font-family: Vazir;
+            margin-bottom: 0px;
+            direction: rtl;
+            border: 1px solid rgba(68, 43, 0, 0.5);
+            display: flex;
+            border-radius: 6px;
+            text-align: center;
+            background-color: rgba(126, 58, 0, 0.76);
+            counter-increment: qa;
+            cursor: pointer;
+            box-shadow: 0px 1px 3px rgba(68, 28, 0, 0.33);
+        }
+
+.Off {
+    pointer-events: none;
+}
+
+.Library.Majles li div.RefItem {
+    background-color: rgba(0, 192, 9, 0.8);
+    box-shadow: 0px 1px 3px rgba(13, 121, 0, 0.59);
+    border: 1px solid rgb(56, 165, 61);
+    margin: 0 auto;
+}
+
+    .Library.Majles li div.RefItem:hover {
+        background-color: rgba(0, 192, 9, 0.7);
+    }
+
+    .Library.Majles li div.RefItem div {
+        color: #F2FF71;
+        margin: 0 auto;
+    }
+
+
+.Library li div.RefItem:hover {
+    background-color: rgb(180, 120, 69);
+}
+
+.Library li div.RefItem span {
+    font-weight: bold;
+    background-color: rgba(255, 244, 116, 0.1);
+    padding: 1px;
+    color: #FFC703;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 140px;
+    padding-top: 5px;
+}
+
+    .Library li div.RefItem span:before {
+        content: '\f078';
+        font-family: 'Awesome' !important;
+        font-size: 9pt;
+        padding-left: 10px;
+    }
+
+    .Library li div.RefItem span.open:before {
+        content: '\f053';
+        font-family: 'Awesome' !important;
+        font-size: 9pt;
+        padding-left: 10px;
+    }
+
+
+.Library li div.RefItem div {
+    padding: 5px;
+    color: rgba(250, 255, 198, 0.9);
+}
+
+.Library li div.RefItem div {
+    padding: 5px;
+    color: rgba(250, 255, 198, 0.9);
+}
+
+.Library li .RefItem:last-child:hover {
+    font-weight: bold;
+}
+
+.Library li ul {
+    font-family: Vazir;
+    font-size: 11pt;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    direction: rtl;
+    border: 1px solid rgba(65, 27, 0, 0.5);
+    border-top: none;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    list-style: none;
+    list-style-position: outside;
+    text-align: justify;
+    background-color: rgba(111, 65, 6, 0.54);
+    cursor: pointer;
+    padding: 0px;
+    line-height: 30px;
+    width: 97%;
+}
+
+.Library.Majles li ul {
+    font-family: Vazir;
+    font-size: 11pt;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    direction: rtl;
+    border: 1px solid rgba(65, 27, 0, 0.5);
+    border-top: none;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    list-style: none;
+    list-style-position: outside;
+    text-align: justify;
+    background-color: rgba(61, 193, 0, 0.19);
+    cursor: pointer;
+    padding: 0px;
+    line-height: 30px;
+    width: 97%;
+}
+
+.Library li ul li {
+    padding: 5px;
+}
+
+
+.Library.Majles li ul.LawList {
+    padding: 1vw;
+    margin: 0 auto;
+}
+
+    .Library.Majles li ul.LawList li {
+        display: inline-block;
+        border: 1px solid rgba(254, 255, 173, 0.77);
+        white-space: nowrap;
+        margin: 5px;
+        direction: rtl;
+        text-align: center;
+        width: 7.1vw;
+        border-radius: 4px;
+        box-shadow: 0px 1px 4px rgba(0, 129, 11, 0.51);
+        overflow: hidden;
+    }
+
+        .Library.Majles li ul.LawList li.selected {
+            background-color: rgba(254, 255, 179, 0.57);
+        }
+
+        .Library.Majles li ul.LawList li a {
+            color: #00620b;
+        }
+
+.Library.Majles li ul li div.RefItem {
+    background-color: rgba(158, 218, 42, 0.8);
+    box-shadow: 0px 1px 3px rgba(98, 137, 12, 0.53);
+    border: 1px solid #78B10A;
+    margin: 0 auto;
+    display: block;
+    color: #535C00;
+}
+
+    .Library.Majles li ul li div.RefItem:hover {
+        background-color: rgba(158, 218, 42, 0.6);
+        box-shadow: 0px -1px 3px rgba(98, 137, 12, 0.53);
+    }
+
+
+.Library li ul li.selected a {
+    color: #FFB700;
+}
+
+.Library.Tanghih li ul li:nth-child(odd) {
+    background-color: rgba(89, 50, 0, 0.41);
+}
+
+.Library.Tanghih li ul li:before {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin-left: 5px;
+    border-right: 5px solid #FFB700;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.Library li ul li a {
+    color: #ffedaf;
+}
+
+.TanghihTab {
+    margin: 0 auto;
+    display: table;
+    margin-top: 2vw;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+    .TanghihTab div {
+        display: table-cell;
+    }
+
+.TabTanghih {
+    display: table-cell;
+    cursor: pointer;
+}
+
+.MidBorder {
+    display: table-cell;
+    border-bottom: 1px solid #5a2100;
+    width: 20px;
+}
+
+.TabTanghih span {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-bottom: 1px none transparent !important;
+    border-color: #5a2100;
+    color: #5a2100;
+    background-image: linear-gradient(to bottom, rgba(255, 183, 0, 0.23),transparent );
+}
+
+    .TabTanghih span.deselected {
+        border-bottom: 1px solid !important;
+        background-image: linear-gradient(to left, rgba(255, 183, 0, 0.23),transparent );
+        background-color: rgba(255, 183, 0, 0.23) !important;
+    }
+
+.gradiantLeft {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to left, #5a2100,transparent );
+    border-image-slice: 1;
+    width: 120px;
+}
+
+.gradiantRight {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #5a2100,transparent );
+    border-image-slice: 1;
+    width: 120px;
+}
+
+.gradiantLeft {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #5a2100,transparent );
+    border-image-slice: 1;
+    width: 120px;
+}
+
+.gradiantRight {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #5a2100,transparent );
+    border-image-slice: 1;
+    width: 120px;
+}
+
+.SearchTanghih {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.SearchTanghihResult {
+    position: absolute;
+    background-color: rgba(255, 234, 72, 0.9);
+    display: none;
+    left: 0px;
+    color: rgba(124, 1, 1, 0.8);
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+
+    .SearchTanghihResult ul {
+        list-style-type: none;
+        text-align: right;
+        direction: rtl;
+        padding: 8px;
+        font-size: 11pt;
+    }
+
+        .SearchTanghihResult ul li {
+            cursor: pointer;
+        }
+
+            .SearchTanghihResult ul li ul {
+                list-style: square;
+                list-style-position: inside;
+                padding-right: 20px;
+                font-size: 10pt;
+            }
+
+
+            .SearchTanghihResult ul li:hover {
+                background-color: rgba(116, 25, 0, 0.07);
+            }
+
+.TanghihSearch {
+    font-family: Vazir;
+    font-size: 10pt;
+    color: #FFE952 !important;
+    border: 1px solid rgba(255, 199, 3, 0.93) !important;
+    width: 38vw;
+    background-color: rgba(255, 243, 107, 0.09);
+    box-shadow: 0px 0px 5px rgba(255, 237, 94, 0.61) inset;
+}
+
+.SearchBox .TanghihSearch::before {
+    content: "\f002";
+    font-family: 'Awesome' !important;
+    font-size: 12pt;
+}
+
+.SearchBox.TanghihSearch::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 233, 82, 0.65);
+}
+
+.SearchBox::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.75;
+}
+
+.SearchBox:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.75;
+}
+
+
+.AddKeywordPanel {
+    border: 1px dashed #0196d1;
+    display: table;
+    float: left;
+    padding: 5px;
+    border-spacing: 2px;
+}
+
+    .AddKeywordPanel button {
+        display: inline-block !important;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid;
+        padding: 1px 2px;
+        color: rgb(54, 162, 221);
+        display: table-cell;
+        vertical-align: middle;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+        .AddKeywordPanel button span:before {
+            content: "\f0fe";
+            font-family: 'Awesome' !important;
+            font-size: 14pt;
+        }
+
+    .AddKeywordPanel input {
+        display: table-cell;
+        vertical-align: middle;
+        border: 1px solid;
+        font-family: Vazir;
+        font-size: 9pt;
+        border-radius: 4px;
+        border: 1px solid rgb(54, 162, 221);
+        color: #004b69;
+    }
+
+.GeneralTab {
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 50px;
+    border-spacing: 0px;
+}
+
+    .GeneralTab.right {
+        float: right;
+    }
+
+    .GeneralTab div {
+        display: table-cell;
+    }
+
+.GtabItem {
+    display: table-cell;
+    cursor: pointer;
+    font-size: 10pt;
+}
+
+.GtabMidBorder {
+    display: table-cell;
+    border-bottom: 1px solid rgba(0, 140, 193, 0.91);
+    width: 20px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.GtabItem span {
+    background-image: linear-gradient(to bottom, rgba(0, 140, 193, 0.41), rgba(255, 255, 255, 0.17));
+    border-width: 1px 1px 0px;
+    border-style: solid solid none;
+    border-color: rgba(0, 140, 193, 0.91) rgba(0, 140, 193, 0.91) -moz-use-text-color;
+    color: #003589;
+    padding: 4px 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 0px -2px 2px rgba(177, 177, 177,0.50);
+    border-bottom: 1px none transparent !important;
+}
+
+    .GtabItem span.deselected {
+        border-color: rgba(106, 147, 162, 0.9);
+        border-bottom: 1px solid rgba(0, 140, 193, 0.91) !important;
+        background-image: linear-gradient(to bottom, rgba(95, 140, 200, 0.4), rgba(255, 255, 255, 0.17));
+    }
+
+.RightLine {
+    border-bottom: 1px solid #1595C7;
+    min-width: 20px;
+}
+
+.LeftLine {
+    border-bottom: 1px solid #1595C7;
+    width: 100%;
+}
+
+
+.Division {
+    display: flex;
+    border-radius: 5px;
+    background-color: rgba(191, 145, 13, 0.1);
+    color: #905F0B;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+    .Division .Icon {
+        padding: 12px 20px 7px 20px;
+        background-color: rgb(236, 218, 143);
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .Division .Label {
+        font-family: Vazir;
+        font-size: 12pt;
+        font-weight: bold;
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+
+
+    .Division .Icon:before {
+        font-family: 'Awesome' !important;
+        content: '\f053';
+        font-size: 14pt;
+    }
+
+    .Division.open .Icon:before {
+        font-family: 'Awesome' !important;
+        content: '\f078';
+        font-size: 14pt;
+    }
+
+    .Division + div {
+        display: none;
+        padding-right: 40px;
+        min-height: 30px;
+    }
+
+ul.LawRelations {
+    list-style: none;
+    padding: 0px;
+}
+
+    ul.LawRelations ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+        ul.LawRelations ul li span {
+            background-color: rgba(232, 0, 21, 0.84);
+            display: inline-block;
+            border-radius: 4px;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 9pt;
+            color: #fff;
+            min-width: 90px;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        ul.LawRelations ul.LawAffected li span {
+            background-color: rgba(30, 125, 206, 0.8);
+        }
+
+    ul.LawRelations.Child ul.LawEffectOn li span {
+        background-color: rgba(230, 113, 0, 0.9);
+    }
+
+    ul.LawRelations ul li a {
+        background-color: rgba(213, 213, 213, 0.43);
+        font-size: 9pt;
+        color: #646464;
+        border-radius: 4px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+.spinner {
+    display: none;
+    padding-top: 10px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+    .spinner > div {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(191, 145, 13, 0.7);
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+
+    .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.SearchReasult ul {
+    list-style-type: none;
+    direction: rtl;
+    padding-right: 0px;
+}
+
+    .SearchReasult ul li {
+        padding: 2px;
+        font-size: 12pt;
+        cursor: pointer;
+    }
+
+        .SearchReasult ul li:hover {
+            background-color: rgba(11, 195, 255, 0.22);
+            border-radius: 6px;
+            color: #00439b;
+            font-weight: bold !important;
+        }
+
+.irTreeContainer {
+    direction: rtl;
+}
+
+ul.irTree {
+    direction: rtl;
+    list-style: none;
+    padding-right: 5px;
+}
+
+    ul.irTree ul {
+        list-style: none;
+        display: block;
+        padding-right: 25px;
+    }
+
+    ul.irTree li {
+        font-size: 12pt;
+    }
+
+
+    ul.irTree ul li a.selected {
+        background-color: rgba(254, 246, 183, 0.84);
+    }
+
+    ul.irTree.Thesaurus ul li a.selected {
+        background-color: rgba(254, 246, 183, 0.84);
+    }
+
+    ul.irTree ul li a {
+        padding-right: 2px;
+        padding-left: 2px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        ul.irTree ul li a:hover {
+            background-color: rgba(254, 246, 183, 0.64);
+        }
+
+    ul.irTree.Thesaurus ul li a:hover {
+        background-color: rgba(9, 194, 254, 0.50);
+    }
+
+    ul.irTree ul li:before {
+        content: '';
+        padding-right: 19px;
+    }
+
+li.hc[aria-expanded="false"]:before {
+    content: '\f0fe' !important;
+    font-family: 'Awesome' !important;
+}
+
+li.hc[aria-expanded="true"]:before {
+    content: '\f146' !important;
+    font-family: 'Awesome' !important;
+}
+
+ul.irTree ul li.hc:before {
+    padding-right: 0px !important;
+    display: inline-block;
+    font-family: 'Awesome' !important;
+    font-size: 12pt;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+ul.irTree ul li.Selected {
+}
+
+ul.irTree {
+}
+
+input.SearchTrigger {
+    display: none;
+}
+
+.Cright {
+    direction: rtl;
+    text-align: center !important;
+    display: block;
+    padding-top: 20px;
+    font-size: 10pt;
+}
+
+    .Cright a {
+    }
+
+.C1285 {
+    text-align: center;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #004570;
+}

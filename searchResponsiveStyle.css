@@ -1,0 +1,11 @@
+@media (max-width: 768px){
+    *{
+        box-sizing: border-box;
+
+    }
+    .TableCell.Search .HeaderLink::before{
+        content: '\f0c9';
+        display: inline-block;
+        font-family: 'Awesome' !important;
+    }
+}

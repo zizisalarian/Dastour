@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box !important;
+    }
+    .HomePage div.MainArea::before{
+        background-position: center;
+    }
+    .HomePage {
+        width: 95%;
+        max-width: 600px
+    }
+
+    .HomePage div.MainArea {
+        height: fit-content;
+    }
+
+    
+    .HomePage div.ContentHead div.right img {
+        height: 15vw;
+    }
+    .HomePage div.ContentHead div.leftHead img{
+        height: 10vw;
+    }
+    .HomePage div.MainArea img.Appname {
+        width: 25%;
+    }
+
+    .HomePage div.MainArea img.Dbname {
+        width: 50%;
+        margin-top: 3vw;
+    }
+
+    .HomePage div.MainArea div.SearchPanel div.InputPanel {
+        display: flex;
+        gap: 1vw;
+        margin-top: 2vw;
+    }
+
+    .HomePage div.MainArea div.SearchPanel .Cell {
+        width: 5vw;
+        height: 7vw;
+    }
+
+    .HomePage div.MainArea div.SearchPanel .Cell:has(input) {
+        width: 50vw;
+        height: 7vw;
+    }
+
+    .HomePage div.MainArea div.SearchPanel input,
+    .HomePage div.MainArea div.SearchPanel button {
+        font-size: 3vw;
+        width: 100%;
+        height: 100%;
+    }
+
+    .HomePage div.MainArea div.SearchPanel div.GolTop,
+    .HomePage div.MainArea div.SearchPanel div.GolBottom img {
+        display: none;
+    }
+
+    .HomePage div.MainArea div.SearchPanel div.GolBottom {
+        display: flex;
+        justify-content: center;
+        margin: 3vw;
+        padding: 0;
+
+        a {
+            font-size: 3vw;
+            padding: 1vw 4vw;
+            border-radius: 5px;
+            border: 1px solid #bd9e20;
+            background-color: #ffffff55;
+            backdrop-filter: blur(5px);
+            box-shadow: 1vw 1vw 1vw #999;
+        }
+    }
+    .HomePage div.MainArea div.SearchPanel button.SearchButton:before{
+        font-size: 2.5vw;
+    }
+    .HomePage div.ContentFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .HomePage div.ContentFooter div.left {
+        display: flex;
+        
+        flex-wrap: wrap;
+        
+        >div{
+            display: none;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw;
+        flex: 1 0 0;
+
+        }
+    }
+    .HomePage div.ContentFooter div.left div.LIcon{
+
+        padding: 3vw;
+        border-radius: 15px;
+        width: fit-content;
+        height: fit-content;
+        width: 100%;
+        left: 0 !important;
+        position: relative;
+        margin-top: 0;
+        float: unset;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        font-size: 2.5vw;
+        br{
+            display: none;
+        }
+    }
+    div.LIcon img{
+        height: 9vw;
+    }
+    .HomePage div.ContentFooter div.right {
+       display: flex;
+       justify-content: space-between;
+       width: 95%;
+    }
+    .HomePage div.ContentFooter div.right .AppArea{
+        margin-top: 3vw;
+       display: flex;
+       gap: 3vw;
+    }
+    .HomePage div.ContentFooter div.right img{
+        height: 15vw;
+    }
+    .HomePage div.ContentFooter div.right>img{
+        height: 10vw;
+    }
+}
