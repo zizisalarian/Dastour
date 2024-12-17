@@ -354,4 +354,7 @@ $(document).ready(function () {
             $(".filearea").hide();
         }
     });
+    
+    $('.menubar').prepend('<label for="customTogglerTree" class="customTogglerTree"> <input type="checkbox" id="customTogglerTree"/> </label>')
+    $('.TableCell.Search').prepend('<label for="customToggler" class="customToggler"> <input type="checkbox" id="customToggler"/> </label>')
 });

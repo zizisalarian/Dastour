@@ -73,4 +73,7 @@ $(document).ready(function() {
     if ($(".Adval").val() == 1)
         $(".menubarLabel").click();
 
+    $('.TableCell.Search').prepend('<label for="customToggler" class="customToggler"> <input type="checkbox" id="customToggler"/> </label>')
 });
+
+
