@@ -1,11 +1,206 @@
+.customToggler{
+    display: none;
+}
+
 @media (max-width: 768px){
     *{
         box-sizing: border-box;
 
     }
-    .TableCell.Search .HeaderLink::before{
+    body .Header{
+        padding: 0;
+    }
+    .TableCell.SiteName{
+        position: absolute;
+        top: 0.6rem;
+        right: 3rem;
+        
+    }
+    div .Header img.SiteName{
+        width: 5rem;
+    }
+    .customToggler{
+        display: block;
+        input{
+            display: none;
+        }
+    }
+    .customToggler::before{
         content: '\f0c9';
         display: inline-block;
         font-family: 'Awesome' !important;
     }
+    .TableCell.Search{
+        position: relative;
+        background-color: #eee;
+        width: 100%;
+        z-index: 9;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    justify-content: space-between;
+    }
+    .TableCell.Search .HeaderLink{
+        display: none;
+    }
+    .TableCell.Search:has(input:checked) .HeaderLink{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: fit-content;
+        right: 0%;
+        top:4rem;
+        padding: 0 0.5rem;
+
+        a{
+            padding: 0.5rem;
+            
+            &:nth-child(4n){
+                background-color: #eee;
+
+            }
+        }
+        
+    }
+    .Header div.SearchPanel{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        button.SearchButton{
+            height: 100%;
+            width: auto;
+            aspect-ratio: 1/1.3;
+            border-radius: 2px ;
+        }
+        input[type="text"].SearchBox{
+            border-radius: 2px ;
+        }
+    }
+    
+    .SearchSetting{
+        margin: 0;
+    }
+    .SearchSetting .Box span.area{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .SearchSetting select{
+        width: auto;
+        font-size: 0.7rem;
+    }
+    .SearchSetting input.datePiker{
+        padding: 0.1rem;
+    }
+    .SearchSetting input.Text{
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+    .SearchSetting input{
+        width: 48%;
+        padding: 0.5rem;
+        flex-grow: 1;
+        max-width: 14rem;
+    }
+    Ul.FloatTab{
+        position: absolute;
+        left: 0;
+    }
+    Ul.FloatTab li{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .FloatTab li select{
+        width: 7rem;
+        font-size: 0.8rem;
+        padding: 0.1rem 0.5rem;
+    }
+    Ul.FloatTab li.Sort{
+        top: 50%
+        
+    }
+    Ul.FloatTab li.Number{
+        top: 43%
+        
+    }
+    Ul.FloatTab li.Sort:before{
+        padding-left: 0.7rem;
+        font-size: 1rem;
+
+    }
+    Ul.FloatTab li.Number:before{
+        padding-left: 0.7rem;
+        font-size: 1rem;
+    }
+
+
+
+    /*Tab Menu*/
+    #TabMenu{
+        overflow-y: auto;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    #TabMenu .TabItem{
+        /* min-width:10rem; */
+        flex: 1 0 0 ;
+        min-width: fit-content;
+    }
+    #TabMenu .TabItem .label{
+        font-size: 0.8rem;
+        background: #fff;
+        min-width: fit-content;
+        padding: 0.8rem 1rem;
+
+        
+    }
+    #TabMenu .TabItem .bline{
+        border: none;
+    }
+    #TabMenu .TabItem.selected .bline{
+        border-width: 1px;
+    }
+    #TabMenu .TabItem.selected .bline span{
+        border-width: 5px;
+    }
+    #TabMenu .TabItem.selected .label{
+        background-color: #0196d1;
+    }
+    #TabMenu .TabItem.selected .label a{
+        color: #fff;
+    }
+    ul.ResultBox li ul{
+        padding-right: 0.5rem;
+    }
+    ul.ResultBox li ul li{
+        padding: 0.3rem 0;
+    }
+    ul.ResultBox li.MP div.LawItem{
+        padding:0.5rem 0;
+        font-size: 0.9rem;
+    }
+    .SearchSetting .Box span.area > span:has(.datePiker ){
+        width: fit-content;
+    }
+}
+@media (max-width: 480px){
+    .SearchSetting .Box span{
+        width: 100%;
+    }
+   
+    .SearchSetting select{
+        width: 100%;
+        font-size: 0.7rem;
+    }
+   
+   
 }

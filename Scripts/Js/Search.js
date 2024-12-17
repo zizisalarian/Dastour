@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     })
     $("li.Sort").on("click", function() {
-        $(this).animate({ "margin-right": "-200" }, 1500, function() {
+        $(this).animate({ "margin-right": "-235" }, 1500, function() {
 
         });
         evt.stopPropagation();
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     });
     $("li.Number").on("click", function() {
-        $(this).animate({ "margin-right": "-290" }, 1500, function() {
+        $(this).animate({ "margin-right": "-270" }, 1500, function() {
 
         });
         evt.stopPropagation();
