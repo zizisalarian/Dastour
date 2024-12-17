@@ -1,644 +1,1122 @@
-
-
-
-
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>
-	 قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان  - ماده1-
-</title><meta charset="utf-8" />
+
+<head>
+    <title>
+        قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان - ماده1-
+    </title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script src="/Scripts/jquery-3.6.4.min.js"></script>
     <script src="/Component/Calendar/src/kamadatepicker.js"></script>
-    
-    <link rel="icon" type="image/png" href="/Images/Fav.png" /><link href="/Dastour.css" rel="stylesheet" type="text/css" /></head>
+
+    <link rel="icon" type="image/png" href="/Images/Fav.png" />
+    <link href="/Dastour.css" rel="stylesheet" type="text/css" />
+    <link href="/searchResponsiveStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body>
     <form method="post" action="./?lid=466047" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="VxEVO2htGumrVhUZqRXxGjWcMPUNWgCx065D0bxWFryzn8Le4uEunQSOfgKA/p2xl7ai9JAWWKABQSwhVgOaN1Nbd+i9TmBby6U2wpvM3HcWBIhenroiOfkvexpNFqKcXlL/6HkaoGQHC7iJwldixNegQ1htuYXstMJ1X/b47BZMOp5A9jYTB+zr3Ukk3fq8sCOjR+qkI7GFdLIGipmM1DCvtFuDyY5YMq93UU9jRV3VHECzj37HbLYGi7V9GxLLQYt3MhCXdXiEE7SVRn0iUv6dSEv6x2emRTOXrAktaMbGbB+JRzJhslfmDKIH2gXnGIPIoAAwKax3kkXhjQyCOPGP1FEyoN50FyW5spFYi5djK4NY68rI8ue+dbyR3wGDWzapx8lPwDqqZmBtdUgrIlOJpKs3Y2IuDg0vOOOUKLyhX6cf18JVhSv3ObWIVZ/1ydexYoBgoA2Odg/rSOy6R8qk/hJWaNAw31MYXB3Ce7JsH8+trExnHaeNCxcZ+fEGjYLO1KRsxJaeXFie9rCDEbn2vp7rgrPAgAXM7sYG+QGy83QxJAisex9HGN00UEuB1Zy3Ll61LcuWNUiBhCt2up8u6oOP5agf//42Q46mGFxddopI2NYExf1YKHqbppktKMJDs0K9aHzzSkTtKWnQRNRxFK2q7pHW89M6PB9oyH+qEc153dzeJirkdaPM8HeRSSt2r/goinUWoDW4Bydpx88lBL/le6wHWzpoFnGPK5yGc/vGvYW/eN2aW5NoIqMbtpsKjavSZBLrtJMt8L3MFkWFTloWtREpOdOcvRFvfBLjTKjZXN7kh78wrP3T1m4NwNMza9KUlcXlB9S4P10Ze+/XEwB6vWf8Zo0G5GrKaXBBeBMtguRCj54AjmxZPIE1cJXJKR2ZwfOL3PzoKfTfVYz6spIW1liNs3AntKdEdJjBHpICCcX+oXuXzB5nXPze/rJ0AnMZpbJrhghPp91ij8weJ+2hplQdaGO/Wwejxw1VAozXre2RZqH0+rwt3/4IF9mkA7busIAg0+RyY4Q2XCM6JAVwZS0NLMnQEfdzHF7WR6hPP7KsQbfbOVl5lqeEjokuwY0RHSlcjxZSM8thSCAzaoWcVj0Kbe2+wJNiPCkxg8XDAm1db6mRtusUjsGNMwtPvkiwxwTNAnBDZqMOJ1kplAK+0SObumij1Hea3P1zWwMJ5eQqxXXgESAVApXoXPbdsoYP2dZLCUeFaHROTs0daXNkgMqTzIZhneRzUvUX1s3JfgMjLXcZdAtcbJu3Sxv9Hl/6/bOPu61KXUXa4OZiIda0HvVoEyxCgo7ih5crs6LFL0ZkBhw5YPiTGETLOLQCRfM3yP9ExjzqPOHL9OfEIqdPIeC0h63FvByUR3873atKLXgenlxq5wuCE3dzMP2vkVlEHmCoNL6G1ASqZ5c5FzSk3deD1tkoLnk6/yvloRDbhHjgDd1l10wdb2IMOe0L01uRkOUDDwIzKJICah4Ch7AHg1MhnkHBQyY8nZ80agRZtWNMbmKsoGDED6YnyjIZHW3YrgEkfml3EON19bdCxpoYsOaWmLQ20nuxO3u5uEV0Y+GeAYIlAjImCO0uAC3QHXBNoqGFkcsni1lfFcDLNrb10zaOqix3nZocexi5aqEhywnwSqHhvpujjpw0JNiV305KWNRig3eLQDW8l4dO9Xrnoqyh4ue2iKCMoUmuNjZ0bbzXtEfUx07+Py/fHzG6WaRKVfzYAMLgJoWF6lrTkZe1baTMpBcxOIcHUTgrYq2SyP8wPi5+2YpuRE2dI96sTCr8UHhDZRsWEDPpV0p/LLLZLumI2WVETp8iIYLZGrDzyIGuVse2r0TyQusJJudQtM+wo6pewGSnRY8CvqIF6YtigbuHXQPB2cjcu9LZ9wwDgnP+zwOsPGRTlphy8WeJtsuxzquROnUHB85FGdan1SvAigvUd+HwRpiKt3VkxUDbcktIT/lgSDFX4eDYkSpTtZE7ZOVIAt1MtbcRBuJE/Hv9E2mRu5iUo+jJKS9zis2sq5/bGeHgBGrGTxHbrEHfOk6vMDukNkt42aAn9I5a7ICCvTHwWkZqnNJ7qCz9D/6OZK5k9kIhrWf/WGguTuqc/rRDKIKE7KTnICAJu7jZ20Zr+IpnHlxcsDu3+Awnb2NLOezWl6zew8FKvaL+cHMBAUnthiytn3wsyIN9TdIBktkbh9h585w7tESLS5yhCuy1h3BGqUGznr0yXS7BZya9GzLW4ZAQ6uYqiZv34PXfF2FUK7zzjzaDzmDUzAVR+K9cNRrQThPe5L+vE+Vos1PshgsSPoVCiViKGc777ZJY7hRiKzuiXnUYojxu7ey4wdlWQsdLK7LQBy6AeM5B4EpQ4amjxZAZc1yQtSjuA3xu6qBaIT6Si0iZqps/UR61CI4ZKaOLDOaGY4QrJKxszadZ0dgflCAtntsJmcsmB9q0nIt2AZso6WpuPHkvxnx1epE3eSRQNcLlyNJkglY5a/YKqVuJXpLBI1BuqL87Qx9JsXDzje4slr6N6nXfTQInQvhMBwkMJu/0PloOSepnt8vYVapqwXmrO834lgIofMAlh7LgiSjunJMBBHWl8palf8YtTs07WawrUPx0YXH+77WaZTjY69Hb4+J1Zg6p54R9zGJkK3LrG5GZMhWGCBbZxcuI69RoJ9CBR7uzGB9O4LUxCPtaxnI+RIKqySJB3TzF5fsG8YLnnSsQJl0DpI/pZmbL5+tiZyAQFwYdU7R8VAYT3hygU5/tmO63BIJKAKHMonMjGjd7ZMlg1YxCHxqCrhJm7ljsYJyzNHNe/Fl2OWRXiMF/fe62gw5iaesXgDx2Hn0lE46Ga8zERWxQ87aUJa/0ZpCVSCD1+wsb0ottW8i2uzesbKnnuZVsmNQ6D3WAdFkvb3pkm0sz4C/04LPkWaf8y6NcbsdOrUXI6i0so+bFqeZB5RIMmAiIjoJnkMh3rkWOyxfiZkeWXAOMjdSVZNCwtzCEQm0ZAbyWYyVKkNWjGPdGnH718tRmtJ5qFeZlHCfyQGZM6Mrna489KsLRl3B8tHSxdwbiE/GJ+ePmghPOeEeb4lV5ZOQjl33IcGSn3xcw5A1mQWQS5iHmnuMWX5v0OGOM/aOWhT2EUnY4JWQ+rSDQDJygv2L/G0n6ArGMwslxTQKUCy6oNdrmzDXcLBxAHdgrhGVfxLgzxivu5hbVX4AxzEctchY2E+8v0v++cjnAwR0iGwZNOBkEZg0oeZCEtjGJSaSNkg9AMv4dzb95inJ+XjuCTPBD9x9+RxSifUCtd1S2wt5Thgh8GHO7ckmPOQ0ZKM79BMHSmkjkoIlxwEk0uDIP4pBjIl3Imc1hprgJ5UGuQYac2rzrLbv26g9i2S/oM1nQorcGsh+aYjaAzDS8yqCbAcv51PP43vaNtB0rh+mKw5DbZ9Jb+I99436g7Q9Q68Rm2Efn7uiIMgHNtgIFfsda9QHGFRhs5dcCq9+79C7kJneECXYNcf6D2pQM4pE6chrf+rrZYGH24SBAqzern+/TTeeToQXNbG8PlF5k6XPAVcrurg7LyUMZO+bDSMtaLxCX+DXKQQLSFzqMU5UNzsL86JNuWozokM0PGCsYqa5tTBCPUaTK4mCYlQjNWGBd9vCoxVy4mN5NPsBEBAuhVMmfVPa51+aAcZurQEWgyI2P3HjEdb68kQ9F8nD32PNZAsDttjdgJm6sihzHgL3oaI3cheex7lALCSLUVjnLS3tk+/jr5yi2bRotizGJuFXb0Q+COJSI/OEIJzNmpKQjsqQz2lMgQst58F0jiBS8NNU5HZFT8wYsI3RqmvOVkfY0BLu+V9UJ9VGGA8r9uvxkpVnxVqCsoKw3GgqcciKXC7Y1iE+p6KNtHtwRa5Z/jSis50W6HXvDRBKfvaRxv+SijapPBXyCmd6azq6BvKWt//ukHjrOr4J81GYWMuBYxmfxpLVC0wC1hMrXB64IPhNrjRH+fHyoDQmCJ/w34nL/EoNqidVwgnF5l2gXZYHHLNtle6C6j2uIHX9isxbCgIZtvyHwz1A3qz9hqCWoZpX89JNuDDDWyYxl6Y4FXgGW5/h2oDKNLKqXv/QON0IUbALFWMSd3GS8fsKB7L3cydz2EWsHnMQuiGtEqmE8jdVXC/yJfiEXcWvtsicUBQLs8uUeifdpM2GRXHXy3vPaXwCq499IQXFVH6vjaQUYRxZPxAob2d9nsYM2Ukr0+9tBLZ33+hrhu3mY/Fd8xdXlGWkZEdDdMEUTgrK+A08hPFN8Lc/tBCZViqNlKcKj1BKQBLqWyCxq2kPSxsLusok1IKJA8Myd3osCK7M+alPHg5Js5hEEgC39j1M2/n9JrnSxpSI6nEHVcDn3GWGrjf4lQJy8pgKwJKy3QGtC+1eeLznZ6TllQr39eZizMBZU90ZewH2uJfsmkTi8MmMasxvRMRioHptPUb8awCkXKJp7a65MlM59ELAh9EfjcMSHHRwyA5dNdhqID0xbDfikfHOZvoNsnCcHRkzMv0Sy5uvSsaHzR0PF9ND8mfq08WUkw7PIoi8auY+Eg3+hpEQO4ZtNoQuAvyNdqd8rFy5DEj7UnEAbVb5tT+/M424l/K2cUZ5qyH09D/6bgIYEPSj3yA9s6qRMTiThineWmw2MXl6Vp6m1IvkpMwMwoI9IZRB9FjPsytzysZWQZe+HFdPTZNz5A3+b7x1mLLR242hVmETkrOSy82VljrjpzAVHIWf/MWiHL8Wk/g0JtTzRwdqFgRkd7BS3On6KOJX1pG+yFPzc+NVEplz052hymJGQPteniyC3T8VA6Pt5OLlHSvVGmEz12B24OaatfxKejTMEixQ=" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form1'];
-if (!theForm) {
-    theForm = document.form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="099A25CD" />
-	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="WE3UO7yE+FEz8rlNWo3sa/O9G3T/tP3Ox6Un+PX8fj137cisXj15Isj5IzhBMJOYuLQY1OdXq8rZcaqHVpoKLhD5DwP3yaoOkgWRZQYk71pM6NArYSMaC01i8QwDpEeCAyXkAFVcbxaC6dFwIXASTjRAIggZuS0AFxYuYkZvT0VHveeouou3/DeqTyp4PSlsKtmg8a4A2rbRivaZSbxJUb8uRhidnZspkg1OafLB+aP3rswN0zkj6dZnb509SsDZb6pDLU4E4GoBIwhc01XdrUNeJapmTB9H8EmJ9506WcawEkIRm0FRIi8Ky3EpiGdXmkR3F32IWa4eI3xnmwtRA/ewgw2eMJ+Yh5msVHUmZ430k1P46xPFBTzpQQIeqXOoU+sdzn4M96IuYGRcR1fCsA==" />
-</div>
-
-        
-
-
-<script>
-    $(document).ready(function () {
-        $("#txtSearch").bind('keypress', function (e) {
-            if (e.which == 13)
-                $("#btnSearch").click()
-
-        })
-        $(".Text").bind('keypress', function (e) {
-            if (e.which == 13)
-                $(".SearchKey").click()
-
-        })
-
-
-
-
-        var CustomOption = {
-            nextButtonIcon: "/images/timeir_next.png"
-            , previousButtonIcon: "/images/timeir_prev.png"
-            , forceFarsiDigits: true
-            , markToday: true
-            , markHolidays: true
-            , highlightSelectedDay: true
-            , sync: true
-        };
-        kamaDatepicker('SearchPanel_txtFromdate', CustomOption);
-        kamaDatepicker('SearchPanel_txtToDate', CustomOption);
-        $("#btnClear").click(function () {
-            $("input.Text").val("");
-            $("input.datePiker").val("");
-            $(".ComboText.OP").val("AND*");
-            $(".ComboText.PageSize").val("50")
-            $(".ComboText.Sort").val("no")
-
-
-        });
-        $("#btnClearSetting").click(function () {
-            $("input.datePiker").val("");
-            $(".ComboText.PageSize").val("50");
-            $(".ComboText.Sort").val("no");
-
-
-
-        });
-        $(".menubarLabel").click(function () {
-
-            $("#" + $(this).data("menu")).slideToggle("slow");
-
-
-
-
-        });
-    });
-
-</script>
-<div class="Header">
-
-    <div class="TableCell Search">
-
-        <div class="HeaderLink">
-
-            <img src="/Images/Rect.svg" />
-
-            <a href="/">صفحه اصلی</a>
-
-
-            <img src="/Images/Rect.svg" />
-
-            <a href="/Thesaurus/">اصطلاحنامه</a>
-
-            <img src="/Images/Rect.svg" />
-
-
-            <a href="/GhavaninTree/">درختواره قوانین</a>
-
-            <img src="/Images/Rect.svg" />
-
-            <a href="/search/?i=1&si=0&tp=1&kh=1&ps=10&st=no">عناوین منسوخ</a>
-
-            <img src="/Images/Rect.svg" />
-
-              <a href="/search/?i=1&si=0&tp=701&ps=10&st=no">اسناد بالادستی</a>
-
-            <img src="/Images/Rect.svg" />
-
-
-
-            <a nohref>ورود کاربران</a>
-
-            <img src="/Images/Rect.svg" />
-
-
-            <a nohref>راهنمـــــا</a>
-
-
-            <img src="/Images/Rect.svg" />
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
         </div>
 
-        <div class="SearchPanel">
-            <div class="cell">
-                <input name="SearchPanel$txtFreeSearch" type="text" id="SearchPanel_txtFreeSearch" class="SearchBox" />
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="099A25CD" />
+            <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="WE3UO7yE+FEz8rlNWo3sa/O9G3T/tP3Ox6Un+PX8fj137cisXj15Isj5IzhBMJOYuLQY1OdXq8rZcaqHVpoKLhD5DwP3yaoOkgWRZQYk71pM6NArYSMaC01i8QwDpEeCAyXkAFVcbxaC6dFwIXASTjRAIggZuS0AFxYuYkZvT0VHveeouou3/DeqTyp4PSlsKtmg8a4A2rbRivaZSbxJUb8uRhidnZspkg1OafLB+aP3rswN0zkj6dZnb509SsDZb6pDLU4E4GoBIwhc01XdrUNeJapmTB9H8EmJ9506WcawEkIRm0FRIi8Ky3EpiGdXmkR3F32IWa4eI3xnmwtRA/ewgw2eMJ+Yh5msVHUmZ430k1P46xPFBTzpQQIeqXOoU+sdzn4M96IuYGRcR1fCsA==" />
+        </div>
+
+
+
+
+        <script>
+            $(document).ready(function () {
+                $("#txtSearch").bind('keypress', function (e) {
+                    if (e.which == 13)
+                        $("#btnSearch").click()
+
+                })
+                $(".Text").bind('keypress', function (e) {
+                    if (e.which == 13)
+                        $(".SearchKey").click()
+
+                })
+
+
+
+
+                var CustomOption = {
+                    nextButtonIcon: "/images/timeir_next.png"
+                    , previousButtonIcon: "/images/timeir_prev.png"
+                    , forceFarsiDigits: true
+                    , markToday: true
+                    , markHolidays: true
+                    , highlightSelectedDay: true
+                    , sync: true
+                };
+                kamaDatepicker('SearchPanel_txtFromdate', CustomOption);
+                kamaDatepicker('SearchPanel_txtToDate', CustomOption);
+                $("#btnClear").click(function () {
+                    $("input.Text").val("");
+                    $("input.datePiker").val("");
+                    $(".ComboText.OP").val("AND*");
+                    $(".ComboText.PageSize").val("50")
+                    $(".ComboText.Sort").val("no")
+
+
+                });
+                $("#btnClearSetting").click(function () {
+                    $("input.datePiker").val("");
+                    $(".ComboText.PageSize").val("50");
+                    $(".ComboText.Sort").val("no");
+
+
+
+                });
+                $(".menubarLabel").click(function () {
+
+                    $("#" + $(this).data("menu")).slideToggle("slow");
+
+
+
+
+                });
+            });
+
+        </script>
+        <div class="Header">
+
+            <div class="TableCell Search">
+
+                <div class="HeaderLink">
+
+                    <img src="/Images/Rect.svg" />
+
+                    <a href="/">صفحه اصلی</a>
+
+
+                    <img src="/Images/Rect.svg" />
+
+                    <a href="/Thesaurus/">اصطلاحنامه</a>
+
+                    <img src="/Images/Rect.svg" />
+
+
+                    <a href="/GhavaninTree/">درختواره قوانین</a>
+
+                    <img src="/Images/Rect.svg" />
+
+                    <a href="/search/?i=1&si=0&tp=1&kh=1&ps=10&st=no">عناوین منسوخ</a>
+
+                    <img src="/Images/Rect.svg" />
+
+                    <a href="/search/?i=1&si=0&tp=701&ps=10&st=no">اسناد بالادستی</a>
+
+                    <img src="/Images/Rect.svg" />
+
+
+
+                    <a nohref>ورود کاربران</a>
+
+                    <img src="/Images/Rect.svg" />
+
+
+                    <a nohref>راهنمـــــا</a>
+
+
+                    <img src="/Images/Rect.svg" />
+                </div>
+
+                <div class="SearchPanel">
+                    <div class="cell">
+                        <input name="SearchPanel$txtFreeSearch" type="text" id="SearchPanel_txtFreeSearch"
+                            class="SearchBox" />
+                    </div>
+                    <div class="cell">
+                        <button onclick="__doPostBack('SearchPanel$btnSearch','')" id="SearchPanel_btnSearch"
+                            class="SearchButton"></button>
+                    </div>
+
+                </div>
             </div>
-            <div class="cell">
-                <button onclick="__doPostBack('SearchPanel$btnSearch','')" id="SearchPanel_btnSearch" class="SearchButton"></button>
+            <div class="TableCell SiteName">
+                <img class="SiteName" src="/Images/NastName.svg" />
             </div>
+        </div>
+
+
+
+
+
+
+        <div id="advSearch" class="SearchSetting">
+
+
+            <div class="Box">
+                <span class="area">
+                    <span class="label">عنـوان قانون شامل:</span>
+                    <span>
+                        <input name="SearchPanel$txtTitle" type="text" id="SearchPanel_txtTitle" class="Text"
+                            placeholder="جستجو در عنوان" />
+
+                        <select name="SearchPanel$ddlTitle" id="SearchPanel_ddlTitle" class="ComboText OP">
+                            <option value="Phrase">بصورت عبارت</option>
+                            <option selected="selected" value="AND*">مشابه شکلی</option>
+                        </select>
+
+                    </span>
+                    <span class="label">باشد.</span>
+                </span>
+                <span class="area">
+                    <span class="label">و عنوان یا متن قانون شامل:</span>
+                    <span>
+                        <input name="SearchPanel$txtContext" type="text" id="SearchPanel_txtContext" class="Text"
+                            placeholder="جستجو در عنوان یا متن" />
+
+
+                        <select name="SearchPanel$ddlContext" id="SearchPanel_ddlContext" class="ComboText OP">
+                            <option value="Phrase">بصورت عبارت</option>
+                            <option selected="selected" value="AND*">مشابه شکلی</option>
+                        </select>
+                    </span>
+                    <span class="label">باشد.</span>
+                </span>
+                <span class="area">
+                    <span class="label">و موضوعات آن شامل:</span>
+                    <span>
+                        <input name="SearchPanel$txtKeywords" type="text" id="SearchPanel_txtKeywords" class="Text"
+                            placeholder="جستجو در موضوعات" />
+
+                        <select name="SearchPanel$ddlKeywords" id="SearchPanel_ddlKeywords" class="ComboText OP">
+                            <option value="Phrase">بصورت عبارت</option>
+                            <option selected="selected" value="AND*">مشابه شکلی</option>
+                        </select>
+                    </span>
+                    <span class="label">باشد.</span>
+                </span>
+
+                <span class="area" style="display: none">
+                    <span class="label">جستجو در شماره رای، نظریه یا مصوبه:</span>
+                    <span>
+                        <input name="SearchPanel$txtNumber" type="text" id="SearchPanel_txtNumber"
+                            class="Text fullWidth" placeholder="جستجو در شماره رای، نظریه یا مصوبه" /></span>
+                </span>
+                <span class="area">
+                    <span class="label">بازه زمانی تصویب</span>
+                    <span><span class="label">از تاریـخ:</span><span><input name="SearchPanel$txtFromdate" type="text"
+                                id="SearchPanel_txtFromdate" class="datePiker Fdate" autocomplete="off"
+                                placeholder="از تاریخ" /></span></span>
+                    <span><span class="label">تا تاریـخ:</span><span><input name="SearchPanel$txtToDate" type="text"
+                                id="SearchPanel_txtToDate" class="datePiker Tdate" autocomplete="off"
+                                placeholder="تا تاریخ" /></span></span>
+
+                    <span class="label">تنظیم گردد.</span>
+
+                </span>
+            </div>
+
+
+
+
+            <input onclick="__doPostBack('SearchPanel$btnAdvSearch','')" name="SearchPanel$btnAdvSearch" type="button"
+                id="SearchPanel_btnAdvSearch" class="SearchKey" value="جستجو" />
+            <input type="button" id="btnClear" value="بازنشانی" />
+        </div>
+        <div class="menubar">
+            <div id="AdvKey" class="menubarLabel" data-menu="advSearch">جستجوی پیشرفته</div>
 
         </div>
-    </div>
-    <div class="TableCell SiteName">
-        <img class="SiteName" src="/Images/NastName.svg" />
-    </div>
-</div>
-
-
-
-
-
-
-<div id="advSearch" class="SearchSetting">
-
-
-    <div class="Box">
-        <span class="area">
-            <span class="label">عنـوان قانون شامل:</span>
-            <span>
-                <input name="SearchPanel$txtTitle" type="text" id="SearchPanel_txtTitle" class="Text" placeholder="جستجو در عنوان" />
-
-                <select name="SearchPanel$ddlTitle" id="SearchPanel_ddlTitle" class="ComboText OP">
-	<option value="Phrase">بصورت عبارت</option>
-	<option selected="selected" value="AND*">مشابه شکلی</option>
-</select>
-
-            </span>
-            <span class="label">باشد.</span>
-        </span>
-        <span class="area">
-            <span class="label">و عنوان یا متن قانون شامل:</span>
-            <span>
-                <input name="SearchPanel$txtContext" type="text" id="SearchPanel_txtContext" class="Text" placeholder="جستجو در عنوان یا متن" />
-
-
-                <select name="SearchPanel$ddlContext" id="SearchPanel_ddlContext" class="ComboText OP">
-	<option value="Phrase">بصورت عبارت</option>
-	<option selected="selected" value="AND*">مشابه شکلی</option>
-</select>
-            </span>
-            <span class="label">باشد.</span>
-        </span>
-        <span class="area">
-            <span class="label">و موضوعات آن شامل:</span>
-            <span>
-                <input name="SearchPanel$txtKeywords" type="text" id="SearchPanel_txtKeywords" class="Text" placeholder="جستجو در موضوعات" />
-
-                <select name="SearchPanel$ddlKeywords" id="SearchPanel_ddlKeywords" class="ComboText OP">
-	<option value="Phrase">بصورت عبارت</option>
-	<option selected="selected" value="AND*">مشابه شکلی</option>
-</select>
-            </span>
-            <span class="label">باشد.</span>
-        </span>
-
-        <span class="area" style="display: none">
-            <span class="label">جستجو در شماره رای، نظریه یا مصوبه:</span>
-            <span>
-                <input name="SearchPanel$txtNumber" type="text" id="SearchPanel_txtNumber" class="Text fullWidth" placeholder="جستجو در شماره رای، نظریه یا مصوبه" /></span>
-        </span>
-        <span class="area">
-            <span class="label">بازه زمانی تصویب</span>
-            <span><span class="label">از تاریـخ:</span><span><input name="SearchPanel$txtFromdate" type="text" id="SearchPanel_txtFromdate" class="datePiker Fdate" autocomplete="off" placeholder="از تاریخ" /></span></span>
-            <span><span class="label">تا تاریـخ:</span><span><input name="SearchPanel$txtToDate" type="text" id="SearchPanel_txtToDate" class="datePiker Tdate" autocomplete="off" placeholder="تا تاریخ" /></span></span>
-
-            <span class="label">تنظیم گردد.</span>
-
-        </span>
-    </div>
-
-
-
-
-    <input onclick="__doPostBack('SearchPanel$btnAdvSearch','')" name="SearchPanel$btnAdvSearch" type="button" id="SearchPanel_btnAdvSearch" class="SearchKey" value="جستجو" />
-    <input type="button" id="btnClear" value="بازنشانی" />
-</div>
-<div class="menubar">
-    <div id="AdvKey" class="menubarLabel" data-menu="advSearch">جستجوی پیشرفته</div>
-
-</div>
 
 
         <div class="LawContentArea">
             <div class="LawTree">
+
+                <link href="/Component/JsTree/dist/themes/default/style.css" rel="stylesheet" />
+                <script src="/Scripts/jquery-3.6.4.min.js"></script>
+                <script src="/Component/JsTree/dist/jstree.js"></script>
+                <script src="/Scripts/Js/Tree.js"></script>
+                <script src="/Scripts/Js/Context.js"></script>
+                <input name="LawTree$lid" type="hidden" id="LawTree_lid" class="lid" value="466047" />
+                <!-- <div id="LawTree_TreeOfLaw" class="TreeOfLaw" style="direction: rtl;">
+                    
                 
-<link href="/Component/JsTree/dist/themes/default/style.css" rel="stylesheet" />
-<script src="/Scripts/jquery-3.6.4.min.js"></script>
-<script src="/Component/JsTree/dist/jstree.js"></script>
-<script src="/Scripts/Js/Tree.js"></script>
-<script src="/Scripts/Js/Context.js"></script>
-<input name="LawTree$lid" type="hidden" id="LawTree_lid" class="lid" value="466047" />
-<div id="LawTree_TreeOfLaw" class="TreeOfLaw" style="direction: rtl;">
-</div>
+                </div> -->
+                <div id="LawTree_TreeOfLaw" class="TreeOfLaw jstree jstree-1 jstree-rtl jstree-default" style="direction: rtl;" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="345103" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-no-icons" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="345102_anchor" aria-expanded="true" id="345102" class="jstree-node  jstree-open jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="345102_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>قانون اصلاح بند (و) ماده (44) قانون برنامه پنجساله پنجم توسعه جمهوري اسلامي ايران</a><ul role="group" class="jstree-children"><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="345103_anchor" id="345103" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="345103_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ماده واحده ـ
+                </a></li><li role="treeitem" aria-selected="false" aria-level="2" aria-labelledby="345104_anchor" id="345104" class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="345104_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>[امضاء]
+                </a></li></ul></li></ul></div>
 
 
             </div>
             <div class="LawContent">
-                
-
-
-        <script>
-
-
-            $(document).ready(function () {
-
-                $(document).click(function (e) {
-
-                    if ($('.pan').is(":visible")) {
-                        hidePan();
-
-                    }
-
-                });
-                $(document).delegate('.pan', 'click', function (e) {
-
-                    e.stopPropagation();
-
-                });
-
-                $(document).delegate('.Tabs', 'click', function (e) {
-                    e.stopPropagation();
-
-
-                });
-
-                var delay = (function () {
-                    var timer = 0;
-                    return function (callback, ms) {
-                        clearTimeout(timer);
-                        timer = setTimeout(callback, ms);
-                    };
-                })();
-
-                $(document).delegate('.LawIcon', 'click', function () {
-
-                    $(".pan").css('z-index', -100);
-                    $(".pan").slideUp(1000)
-                    $(".pan." + $(this).attr("data-pan")).css('z-index', 1);
-                    
-                    delay($(".pan." + $(this).attr("data-pan")).slideDown(1000),1000)
-
-                    TabIcon($(this))
 
 
 
+                <script>
+
+
+                    $(document).ready(function () {
+
+                        $(document).click(function (e) {
+
+                            if ($('.pan').is(":visible")) {
+                                hidePan();
+
+                            }
+
+                        });
+                        $(document).delegate('.pan', 'click', function (e) {
+
+                            e.stopPropagation();
+
+                        });
+
+                        $(document).delegate('.Tabs', 'click', function (e) {
+                            e.stopPropagation();
+
+
+                        });
+
+                        var delay = (function () {
+                            var timer = 0;
+                            return function (callback, ms) {
+                                clearTimeout(timer);
+                                timer = setTimeout(callback, ms);
+                            };
+                        })();
+
+                        $(document).delegate('.LawIcon', 'click', function () {
+
+                            $(".pan").css('z-index', -100);
+                            $(".pan").slideUp(1000)
+                            $(".pan." + $(this).attr("data-pan")).css('z-index', 1);
+
+                            delay($(".pan." + $(this).attr("data-pan")).slideDown(1000), 1000)
+
+                            TabIcon($(this))
 
 
 
 
 
 
-                })
-                function TabIcon(obj) {
-                    $(".LawIcon").find("span").hide("slow");
-                    $(".LawIcon").removeClass("Icon-Selected");
-                    obj.find("span").show("slow");
-                    $(".LawIcon").addClass("Icon-deSelected");
-                    obj.addClass("Icon-Selected");
-                }
-                function hidePan() {
-                    $('.pan').slideUp(800);
-                    $(".LawIcon").find("span").hide("slow");
-                    delay($(".LawIcon").removeClass("Icon-Selected").removeClass("Icon-deSelected"), 800)
 
-                }
 
-                
-                $(document).delegate('.Division', 'click', function () {
 
-                    
-                    var obj = $(this)
-                    
-                    if (obj.next("div").children().length) {
-
-                        if (obj.next("div").css("display") == 'block') {
-
-                            HideDivision(obj)
+                        })
+                        function TabIcon(obj) {
+                            $(".LawIcon").find("span").hide("slow");
+                            $(".LawIcon").removeClass("Icon-Selected");
+                            obj.find("span").show("slow");
+                            $(".LawIcon").addClass("Icon-deSelected");
+                            obj.addClass("Icon-Selected");
                         }
-                        else
-                            ShowDivision(obj)
+                        function hidePan() {
+                            $('.pan').slideUp(800);
+                            $(".LawIcon").find("span").hide("slow");
+                            delay($(".LawIcon").removeClass("Icon-Selected").removeClass("Icon-deSelected"), 800)
+
+                        }
 
 
-
-                    }
-                    else {
-
-                        LoadRelation(obj)
-                    }
+                        $(document).delegate('.Division', 'click', function () {
 
 
-                });
-                function HideDivision(obj) {
+                            var obj = $(this)
 
+                            if (obj.next("div").children().length) {
 
-                    obj.next("div").slideUp("slow");
-                    obj.removeClass("open");
-                }
-                function ShowDivision(obj) {
+                                if (obj.next("div").css("display") == 'block') {
 
-                    obj.next("div").slideDown("slow");
-                    obj.addClass("open");
-                }
-                function LoadRelation(obj) {
+                                    HideDivision(obj)
+                                }
+                                else
+                                    ShowDivision(obj)
 
-                    var target = obj.next("div")
-                    $.ajax({
-                        dataType: "html",
-                        url: "/Law/Data",
-                        data: { id: obj.data("lid"), chl: obj.data("chl") },
-                        beforeSend: function () { obj.children("div.spinner").show(); },
-                        complete: function () { obj.children("div.spinner").hide(); },
-                        success: function (data) {
-
-                            if (data.length > 0) {
-
-                                target.html(data);
-                                ShowDivision(obj)
 
 
                             }
+                            else {
+
+                                LoadRelation(obj)
+                            }
+
+
+                        });
+                        function HideDivision(obj) {
+
+
+                            obj.next("div").slideUp("slow");
+                            obj.removeClass("open");
+                        }
+                        function ShowDivision(obj) {
+
+                            obj.next("div").slideDown("slow");
+                            obj.addClass("open");
+                        }
+                        function LoadRelation(obj) {
+
+                            var target = obj.next("div")
+                            $.ajax({
+                                dataType: "html",
+                                url: "/Law/Data",
+                                data: { id: obj.data("lid"), chl: obj.data("chl") },
+                                beforeSend: function () { obj.children("div.spinner").show(); },
+                                complete: function () { obj.children("div.spinner").hide(); },
+                                success: function (data) {
+
+                                    if (data.length > 0) {
+
+                                        target.html(data);
+                                        ShowDivision(obj)
+
+
+                                    }
+                                }
+
+
+
+                            });
                         }
 
 
-
                     });
-                }
 
 
-            });
+                </script>
 
-
-        </script>
-        
 
                 <div class="LawPath">
-                    مجموعه‌هاي روزنامه رسمي- سال 1403   > <a target='_Self' href="/context/?lid=466046"> قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان</a> > 
-                    <a href='http://dastour.ir:100/ghanoon/LawForm.aspx?LID=466046' target="_blank" style="display:none;">ویرایش</a>
+                    مجموعه‌هاي روزنامه رسمي- سال 1403 > <a target='_Self' href="/context/?lid=466046"> قانون ساماندهي و
+                        نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان</a> >
+                    <a href='http://dastour.ir:100/ghanoon/LawForm.aspx?LID=466046' target="_blank"
+                        style="display:none;">ویرایش</a>
                 </div>
-                
+
                 <div class="Tabs">
                     <div class="LawExtraDataIcons">
-                        <div id="LawItem_lvLaw_shenasIcon_0" class="LawIcon Icon-Shenasname" data-pan="shenasnameh"><span class="LawIconText Text-Shenasname"></span></div>
+                        <div id="LawItem_lvLaw_shenasIcon_0" class="LawIcon Icon-Shenasname" data-pan="shenasnameh">
+                            <span class="LawIconText Text-Shenasname"></span></div>
 
-                        <div id="LawItem_lvLaw_letterIcon_0" class="LawIcon Icon-Letter" data-pan="Letter"><span class="LawIconText Text-Letter"></span></div>
+                        <div id="LawItem_lvLaw_letterIcon_0" class="LawIcon Icon-Letter" data-pan="Letter"><span
+                                class="LawIconText Text-Letter"></span></div>
                         <a class="LawIcon Icon-Printer" href='/Print/?LID=466046' target="_blank"></a>
 
-                        
+
                     </div>
 
                     <div class="pan shenasnameh">
                         <ul class="Shenasnameh">
                             <li>
-                                <span>شماره انتشار در روزنامه رسمی :</span><span>23020</span></li>
+                                <span>شماره انتشار در روزنامه رسمی :</span><span>23020</span>
+                            </li>
                             <li>
-                                <span>تاریخ انتشار در روزنامه رسمی :</span><span>1403/01/18</span></li>
+                                <span>تاریخ انتشار در روزنامه رسمی :</span><span>1403/01/18</span>
+                            </li>
 
                             <li>
-                                <span>شماره دستور اجرا :</span><span>243890</span></li>
+                                <span>شماره دستور اجرا :</span><span>243890</span>
+                            </li>
                             <li>
-                                <span>تاریخ دستور اجرا :</span><span>1402/12/29</span></li>
+                                <span>تاریخ دستور اجرا :</span><span>1402/12/29</span>
+                            </li>
 
-                            
-                            
 
-                            
+
+
+
 
                             <li>
-                                <span>دستگاه مجری:</span><span>[<span>وزارت کشور</span>][<span>وزارت امور اقتصادي و دارايي</span>][<span>وزارت صنعت ، معدن و تجارت</span>][<span>وزارت راه و شهرسازي</span>][<span>نهاد رياست جمهوري (ستاد مرکزي مبارزه با قاچاق کالا و ارز)</span>]
+                                <span>دستگاه مجری:</span><span>[<span>وزارت کشور</span>][<span>وزارت امور اقتصادي و
+                                        دارايي</span>][<span>وزارت صنعت ، معدن و تجارت</span>][<span>وزارت راه و
+                                        شهرسازي</span>][<span>نهاد رياست جمهوري (ستاد مرکزي مبارزه با قاچاق کالا و
+                                        ارز)</span>]
                                 </span>
                             </li>
 
-                            
-                            
+
+
 
                         </ul>
-                        
-                                <div class="TasvibItem">
-                                    <span>مصوبه‌‌ </span>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <span></span>
-                                    <span class="Marjatasvib"><b> مجلس شوراي اسلامي </b></span>
-                                    <span> مورخ 1402/11/25</span>
-                                    
 
-                                </div>
-                            
-                                <div class="TasvibItem">
-                                    <span>مصوبه‌‌ </span>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <span></span>
-                                    <span class="Marjatasvib"><b> شوراي نگهبان </b></span>
-                                    <span> مورخ 1402/12/16</span>
-                                    
+                        <div class="TasvibItem">
+                            <span>مصوبه‌‌ </span>
 
-                                </div>
-                            
 
-                                
+
+
+
+                            <span></span>
+                            <span class="Marjatasvib"><b> مجلس شوراي اسلامي </b></span>
+                            <span> مورخ 1402/11/25</span>
+
+
+                        </div>
+
+                        <div class="TasvibItem">
+                            <span>مصوبه‌‌ </span>
+
+
+
+
+
+                            <span></span>
+                            <span class="Marjatasvib"><b> شوراي نگهبان </b></span>
+                            <span> مورخ 1402/12/16</span>
+
+
+                        </div>
+
+
+
 
                     </div>
                     <div class="pan Letter">
 
                         <div class="LawLetter">
 
-                            
-                                    <div class="Letter">
 
-                                        <div>
-                                            <div class="Cell">
-                                                شماره: 97146/11ـ861 
-                                            </div>
-                                            <div class="Cell">
-                                                1402/12/26
-                                            </div>
-                                        </div>
+                            <div class="Letter">
 
-
-                                        <div class="Sender">
-                                            حضرت حجت‌الاسلام والمسلمين جناب آقاي دكتر سيدابراهيم رئيسي
-                                        </div>
-                                        <div>
-
-                                            عطف به نامه شماره 186285/59450 مورخ 10/10/1402 مطابق اصل يكصد و بيست و سوم (123) قانون اساسي جمهوري اسلامي ايران «قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان» مصوب 25/11/1402 مجلس شوراي اسلامي به شرح پيوست ابلاغ مي‌شود.<br /><br />
-
-                                        </div>
-                                        <div class="Reciver ">
-
-                                            رئيس مجلس شوراي اسلامي ـ محمدباقر قاليباف
-
-
-                                        </div>
+                                <div>
+                                    <div class="Cell">
+                                        شماره: 97146/11ـ861
                                     </div>
-                                
-                                    <div class="Letter">
-
-                                        <div>
-                                            <div class="Cell">
-                                                شماره:  243890         
-                                            </div>
-                                            <div class="Cell">
-                                                1402/12/29
-                                            </div>
-                                        </div>
-
-
-                                        <div class="Sender">
-                                            نهاد رياست جمهوري (ستاد مركزي مبارزه با قاچاق كالا و ارز)<br />وزارت امور اقتصادي و دارايي  ـ وزارت صنعت، معدن و تجارت<br />وزارت راه و شهرسازي ـ وزارت كشور
-                                        </div>
-                                        <div>
-
-                                            در اجراي اصل يكصد و بيست و سوم قانون اساسي جمهوري اسلامي ايران به پيوست «قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان» كه در جلسه علني روز چهارشنبه مورخ بيست و پنجم بهمن ماه يكهزار و چهارصد و دو مجلس شوراي اسلامي تصويب شد و در تاريخ 16/12/1402 به تأييد شوراي نگهبان رسيده و طي نامه شماره 97146/11ـ861 مورخ 26/12/1402 مجلس شوراي اسلامي واصل گرديده است، جهت اجراء ابلاغ مي‌گردد.<br />
-
-                                        </div>
-                                        <div class="Reciver ">
-
-                                            رئيس جمهور ـ سيدابراهيم رئيسي
-
-
-                                        </div>
+                                    <div class="Cell">
+                                        1402/12/26
                                     </div>
-                                
+                                </div>
+
+
+                                <div class="Sender">
+                                    حضرت حجت‌الاسلام والمسلمين جناب آقاي دكتر سيدابراهيم رئيسي
+                                </div>
+                                <div>
+
+                                    عطف به نامه شماره 186285/59450 مورخ 10/10/1402 مطابق اصل يكصد و بيست و سوم (123)
+                                    قانون اساسي جمهوري اسلامي ايران «قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و
+                                    ملواني) و ايجاد اشتغال پايدار مرزنشينان» مصوب 25/11/1402 مجلس شوراي اسلامي به شرح
+                                    پيوست ابلاغ مي‌شود.<br /><br />
+
+                                </div>
+                                <div class="Reciver ">
+
+                                    رئيس مجلس شوراي اسلامي ـ محمدباقر قاليباف
+
+
+                                </div>
+                            </div>
+
+                            <div class="Letter">
+
+                                <div>
+                                    <div class="Cell">
+                                        شماره: 243890
+                                    </div>
+                                    <div class="Cell">
+                                        1402/12/29
+                                    </div>
+                                </div>
+
+
+                                <div class="Sender">
+                                    نهاد رياست جمهوري (ستاد مركزي مبارزه با قاچاق كالا و ارز)<br />وزارت امور اقتصادي و
+                                    دارايي ـ وزارت صنعت، معدن و تجارت<br />وزارت راه و شهرسازي ـ وزارت كشور
+                                </div>
+                                <div>
+
+                                    در اجراي اصل يكصد و بيست و سوم قانون اساسي جمهوري اسلامي ايران به پيوست «قانون
+                                    ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان» كه
+                                    در جلسه علني روز چهارشنبه مورخ بيست و پنجم بهمن ماه يكهزار و چهارصد و دو مجلس شوراي
+                                    اسلامي تصويب شد و در تاريخ 16/12/1402 به تأييد شوراي نگهبان رسيده و طي نامه شماره
+                                    97146/11ـ861 مورخ 26/12/1402 مجلس شوراي اسلامي واصل گرديده است، جهت اجراء ابلاغ
+                                    مي‌گردد.<br />
+
+                                </div>
+                                <div class="Reciver ">
+
+                                    رئيس جمهور ـ سيدابراهيم رئيسي
+
+
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
                     <div id="LawItem_lvLaw_panfile_0" class="pan files">
-                        
+
                     </div>
                 </div>
 
-              
-            
-
-
-        <button id="LawItem_btnref" class="refresh"></button>
-        <input name="LawItem$SelectedLawID" type="hidden" id="LawItem_SelectedLawID" class="SelectedLawID" />
 
 
 
+
+                <button id="LawItem_btnref" class="refresh"></button>
+                <input name="LawItem$SelectedLawID" type="hidden" id="LawItem_SelectedLawID" class="SelectedLawID" />
 
 
 
 
 
+
+
+
+
+                <link rel="stylesheet" href="/Component/wyswyg/css/font-awesome.min.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/froala_editor.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/froala_style.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/code_view.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/draggable.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/colors.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/emoticons.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/image_manager.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/image.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/line_breaker.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/table.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/char_counter.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/video.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/fullscreen.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/file.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/quick_insert.css">
+                <link rel="stylesheet" href="/Component/wyswyg/css/plugins/help.css">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+                <link href="/Style/Icons.css" rel="stylesheet" />
+                <script src="/Scripts/Js/Context.js"></script>
+
+                <div id="ShowLaw_TreeOfLaw" class="PrintLaw" data-selected="466047" data-idLaw="466047">
+                    <ul>
+                        <li id="ct_466046" class="LCItem" data-id="466046">
+                            <div id="dv_466046" class="dvItem" data-id="466046">
+                                <div class="original h1"><span class='label'>قانون ساماندهي و نظارت بر تجارت مرزي
+                                        (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان</span><br />&nbsp;</div>
+                                <div class="opline" data-id="466046" data-idParent="466046">
+                                    <div id="ShowLaw_k_466046" class="keyline"><span class='AddNode'> افزودن متن
+                                        </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li id="ct_466047" class="LCItem" data-id="466047">
+                                    <div id="dv_466047" class="dvItem" data-id="466047">
+                                        <p>466047</p>
+                                        <div class="original h2"><span class='label'>ماده1-</span>&nbsp;به منظور رونق
+                                            اقتصاد مناطق مرزی، ایجاد شفافیت و رصدپذیر نمودن واردات، توزیع و عرضه کالاهای
+                                            مبادله مرزنشینی، تقویت معیشت مرزنشینان و کاهش مبادلات غیر رسمی در مرزهای
+                                            زمینی و آبی، واردات کالا از طریق رویه‌های ملوانی (ته لنجی) و کولبری منطبق با
+                                            تعاریف زیر، به مدت پنج سال از زمان ابلاغ آیین‌نامه‌های موضوع ماده (۶) این
+                                            قانون مطابق با ترتیبات این قانون مجاز و پس از اتمام مدت مذکور واردات کالا،
+                                            تابع قوانین و مقررات کشور می‌باشد.</div>
+                                        <div class="opline" data-id="466047" data-idParent="466046">
+                                            <div id="ShowLaw_k_466047" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li id="ct_466048" class="LCItem  Origin" data-id="466048">
+                                            <div id="dv_466048" class="dvItem Origin" data-id="466048">
+                                                <p>466048</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>الف ـ </span>&nbsp;رویه ملوانی (ته لنجی):
+                                                        واردات کالا از طریق شناورهای سنتی و فلزی، با ساختار لنج و با
+                                                        ظرفیت ناخالص کمتر از (۵۰۰) تن در بنادر جنوبی کشور که قوانین و
+                                                        مقررات واردات در آن رعایت نمی‌شود و صرفاً بر اساس ترتیبات این
+                                                        قانون مجاز به واردات کالا می‌باشد.</div>
+                                                <div class="opline" data-id="466048" data-idParent="466047">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li id="ct_466049" class="LCItem  Origin" data-id="466049">
+                                                    <div id="dv_466049" class="dvItem Origin" data-id="466049">
+                                                        <p>466049</p>
+                                                        <div class="original h4"><span class='ContentSpan'><span
+                                                                    class='label'>تبصره ـ </span>&nbsp;ورود کالای همراه
+                                                                ملوانان، خدمه و کارکنان شناورهای مذکور (موضوع قانون
+                                                                ساماندهی مبادلات مرزی مصوب 6/7/1384) سالانه تا سقف ۱۲۰۰
+                                                                یورو ارزش کالا برای هر مشمول (حداکثر ۵۰۰ یورو ارزش کالا
+                                                                در هر سفر) با رعایت مقررات و قوانین مربوط، مجاز است.
+                                                        </div>
+                                                        <div class="opline" data-id="466049" data-idParent="466048">
+                                                            <div class="keyline"><span class='AddNode'> افزودن متن
+                                                                </span><span class='AddRelation'> ایجاد رابطه
+                                                                </span><span class='AddRelationEslah'> اصلاحیه </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="ct_466050" class="LCItem  Origin" data-id="466050">
+                                            <div id="dv_466050" class="dvItem Origin" data-id="466050">
+                                                <p>466050</p>
+                                                <div class="original h3"><span class='ContentSpan'><span class='label'>ب
+                                                            ـ
+                                                        </span>&nbsp;رويه کولبري: واردات کالا از طريق معابر و مرزهاي
+                                                        زميني کشور که کالا در معبر مرزي توسط مرزنشينان حمل شده و قوانين
+                                                        و مقررات واردات در آن رعايت نمي‌شود و صرفاً بر اساس ترتيبات اين
+                                                        قانون مجاز به واردات کالا مي‌باشد.<br></div>
+                                                <div class="opline" data-id="466050" data-idParent="466047">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li id="ct_466051" class="LCItem  Origin" data-id="466051">
+                                                    <div id="dv_466051" class="dvItem Origin" data-id="466051">
+                                                        <p>466051</p>
+                                                        <div class="original h4"><span class='ContentSpan'><span
+                                                                    class='label'>تبصره1-</span>&nbsp;آيين‌نامه احراز
+                                                                صلاحيت اشخاص، استانها و شهرستانهاي مشمول اين قانون توسط
+                                                                هيأت وزيران تصويب و ابلاغ مي‌شود. انجام تشريفات قانوني
+                                                                واردات کالاهاي موضوع اين قانون، در چهارچوب مصوبه هيأت
+                                                                وزيران توسط واحدهاي توليدي و صنفي مستقر در مناطق مرزي
+                                                                مشمول نيز امکان‌پذير مي‌باشد.<br>
+                                                        </div>
+                                                        <div class="opline" data-id="466051" data-idParent="466050">
+                                                            <div class="keyline"><span class='AddNode'> افزودن متن
+                                                                </span><span class='AddRelation'> ایجاد رابطه
+                                                                </span><span class='AddRelationEslah'> اصلاحیه </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="ct_466052" class="LCItem  Origin" data-id="466052"
+                                                    data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14">
+                                                    <div id="dvIcons_466052" class="dvIcons" data-id="466052"><img
+                                                            src="/images/SVG/relation.svg" class="relIcon"></img>
+                                                        <div class="RelationErea">
+                                                            <ul>
+                                                                <li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه
+                                                                        رسمي- سال 1392 > <a target='_blank'
+                                                                            href="/context/?lid=359452"> قانون مبارزه با
+                                                                            قاچاق كالا و ارز </a> > <a target='_blank'
+                                                                            href="/context/?lid=359459"> فصل دوم ـ
+                                                                            پيشگيري از قاچاق
+                                                                        </a> > <a target='_blank'
+                                                                            href="/context/?lid=359460"> ماده6 ـ
+                                                                        </a> > </span></li>
+                                                                <li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه
+                                                                        رسمي- سال 1392 > <a target='_blank'
+                                                                            href="/context/?lid=359452"> قانون مبارزه با
+                                                                            قاچاق كالا و ارز </a> > <a target='_blank'
+                                                                            href="/context/?lid=359459"> فصل دوم ـ
+                                                                            پيشگيري از قاچاق
+                                                                        </a> > <a target='_blank'
+                                                                            href="/context/?lid=359467"> ماده13ـ
+                                                                        </a> > </span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="dv_466052" class="dvItem Origin" data-id="466052"
+                                                        data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14">
+                                                        <p>466052</p>
+                                                        <div class="original h4"><span class='ContentSpan'><span
+                                                                    class='label'>تبصره2ـ </span>&nbsp;سقف و ارزش کل
+                                                                واردات کالا از طریق رویه های موضوع این ماده، سالانه به
+                                                                میزان حداکثر ده درصد (10%) ارزش واردات کل کشور به مأخذ
+                                                                سال قبل، تعیین می‌شود و انجام آن منوط به ثبت آماری در
+                                                                سامانه جامع یکپارچه‌سازی و نظارت بر فرایند تجارت (موضوع
+                                                                بند «الف» ماده (۶) قانون مبارزه با قاچاق کالا و ارز مصوب
+                                                                ۱۳۹۲/۱۰/۳ و اصلاحات بعدی)، اخذ شناسه کالا و شناسه رهگیری
+                                                                (موضوع ماده (۱۳) قانون مبارزه با قاچاق کالا و ارز)، ثبت
+                                                                اطلاعات در سامانه جامع انبارها (موضوع بند «ث» ماده (۶)
+                                                                قانون مبارزه با قاچاق کالا و ارز) و تعیین منشأ ارز
+                                                                کالاهای وارداتی می‌باشد.<br>
+                                                                پس از سال پنجم اجرای این قانون، تولیدکنندگان و اصناف
+                                                                مستقر در شهرستانهای مرزی مشمول میتوانند با تخفیف سی
+                                                                درصدی (30%) از عوارض و حقوق ورودی، سالانه تا سقف یک درصد
+                                                                (1%) ارزش واردات کل کشور به مأخذ سال قبل و با رعایت
+                                                                ترتیبات مندرج در این تبصره نسبت به واردات کالا اقدام
+                                                                نمایند.<br>
+                                                        </div>
+                                                        <div class="opline" data-id="466052" data-idParent="466050">
+                                                            <div class="keyline"><span class='AddNode'> افزودن متن
+                                                                </span><span class='AddRelation'> ایجاد رابطه
+                                                                </span><span class='AddRelationEslah'> اصلاحیه </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="ct_466053" class="LCItem" data-id="466053">
+                                    <div id="dv_466053" class="dvItem" data-id="466053">
+                                        <p>466053</p>
+                                        <div class="original h2"><span class='label'>ماده2-</span>&nbsp;به منظور هدايت
+                                            تدريجي مبادلات موضوع اين قانون در مرزها به چهارچوب تجارت رسمي، کالاهاي
+                                            وارداتي از طريق مبادلات موضوع اين قانون در مرحله ترخيص کالا صرفاً مشمول
+                                            پرداخت پنجاه درصد (50%) ميزان عوارض و ماليات بر ارزش افزوده تعيين شده براي
+                                            ورود قطعي کالا هستند و در سال اول اجراي اين قانون از ساير عوارض و مالياتها
+                                            معاف مي‌باشند. در مرحله فروش کالا توسط مشمولين اين قانون، مابه‌التفاوت
+                                            ماليات و عوارض فروش با ماليات و عوارض خريد موضوع قانون ماليات بر ارزش
+                                            افزوده، به عنوان اعتبار مالياتي ارزش افزوده براي ايشان لحاظ مي‌شود لکن مابقى
+                                            زنجيره تبادل کالا در کشور موظف به پرداخت کامل آن مي‌باشند.<br />
+                                        </div>
+                                        <div class="opline" data-id="466053" data-idParent="466046">
+                                            <div id="ShowLaw_k_466053" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li id="ct_466054" class="LCItem  Origin" data-id="466054">
+                                            <div id="dv_466054" class="dvItem Origin" data-id="466054">
+                                                <p>466054</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره1-</span>&nbsp;اعمال پلکانی حقوق گمرکی و
+                                                        سایر عوارض قانونی از سال دوم اجرای این قانون سالانه به میزان
+                                                        بیست درصد (۲0%) مقرر در رویه تجاری و اعمال معافیت کامل یا پلکانی
+                                                        سود بازرگانی توسط دولت برای کالاهای وارداتی موضوع این ماده (به
+                                                        گونه‌ای که مزیت واردات موضوع این قانون نسبت به رویه واردات رسمی
+                                                        لحاظ گردد) مطابق آیین‌نامه‌ها یا دستورالعملها و شاخصهایی که در
+                                                        چهارچوب قانون به تصویب هیأت وزیران می‌رسد، در طول اجرای این
+                                                        قانون مجاز است.</div>
+                                                <div class="opline" data-id="466054" data-idParent="466053">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="ct_466055" class="LCItem  Origin" data-id="466055"
+                                            data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14">
+                                            <div id="dvIcons_466055" class="dvIcons" data-id="466055"><img
+                                                    src="/images/SVG/relation.svg" class="relIcon"></img>
+                                                <div class="RelationErea">
+                                                    <ul>
+                                                        <li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه رسمي- سال
+                                                                1390 > <a target='_blank' href="/context/?lid=343445">
+                                                                    قانون امور گمركي </a> > <a target='_blank'
+                                                                    href="/context/?lid=343446"> بخش اول ـ تعاريف،
+                                                                    سازمان و كليات
+                                                                </a> > <a target='_blank' href="/context/?lid=343447">
+                                                                    فصل اول ـ تعاريف
+                                                                </a> > <a target='_blank' href="/context/?lid=343448">
+                                                                    ماده 1ـ
+                                                                </a> > </span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="dv_466055" class="dvItem Origin" data-id="466055"
+                                                data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14">
+                                                <p>466055</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره2-</span>&nbsp;امهال پرداخت مالیات بر
+                                                        ارزش افزوده متعلق به کالاهای وارداتی موضوع این ماده، با اخذ
+                                                        تضامین معتبر (موضوع بند «ح» ماده (۱) قانون امور گمرکی مصوب
+                                                        ۱۳۹۰/۸/۲۲ و اصلاحات بعدی آن) و حداکثر به مدت سه ماه از تاریخ
+                                                        ترخیص قطعی کالا از گمرک مجاز می‌باشد.امهال پرداخت مالیات بر ارزش
+                                                        افزوده متعلق به کالاهای وارداتی موضوع این ماده، با اخذ تضامین
+                                                        معتبر (موضوع بند «ح» ماده (۱) قانون امور گمرکی مصوب ۱۳۹۰/۸/۲۲ و
+                                                        اصلاحات بعدی آن) و حداکثر به مدت سه ماه از تاریخ ترخیص قطعی کالا
+                                                        از گمرک مجاز می‌باشد.<br>
+                                                </div>
+                                                <div class="opline" data-id="466055" data-idParent="466053">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="ct_466056" class="LCItem" data-id="466056">
+                                    <div id="dv_466056" class="dvItem" data-id="466056">
+                                        <p>466056</p>
+                                        <div class="original h2"><span class='label'>ماده3-</span>&nbsp;کليه درآمدهاي
+                                            گمرکي و مالياتي حاصل از اجراي اين قانون به حسابي مخصوص نزد خزانه‌داري کل
+                                            کشور واريز و به صورت تخصيص صددرصد (100%) و مازاد بر اعتبارات مندرج در قوانين
+                                            بودجه سنواتي در قالب رديف مستقل در ارقام بودجه لحاظ و به همان استان مرزي
+                                            اختصاص و شصت درصد (60%) آن براي تقويت معيشت و اشتغال مرزنشينان (پرداختهاي
+                                            حمايتي هدفمند، تأمين زير ساختهاي مورد نياز حوزه اشتغال و ايجاد اشتغال
+                                            پايدار)، بيست درصد (20%) براي زيرساختهاي اقتصاد مرز (تجهيز بازارچه‌هاي مرزي،
+                                            تقويت و تجهيز بنادر و گمرکات کوچک) و بيست درصد (20%) براي تقويت زيرساخت‌هاي
+                                            مربوط به امنيت و مبارزه با قاچاق (انسداد معابر و خلأهاي مرزي، خورهاي غير
+                                            مجاز و آلوده به قاچاق کالا)، در مناطق مشمول هزينه مي‌گردد.<br />
+                                        </div>
+                                        <div class="opline" data-id="466056" data-idParent="466046">
+                                            <div id="ShowLaw_k_466056" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li id="ct_466057" class="LCItem  Origin" data-id="466057">
+                                            <div id="dv_466057" class="dvItem Origin" data-id="466057">
+                                                <p>466057</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره1-</span>&nbsp;دولت موظف است ظرف شش ماه
+                                                        پس از تصويب اين قانون، اقدامات قانوني لازم جهت تهيه و تصويب
+                                                        برنامه آمايش و تحول در بازارچه‌هاي مرزي و برنامه توسعه و تجهيز
+                                                        بنادر کوچک استانهاي ساحلي جنوب کشور را به عمل آورد.<br>
+                                                </div>
+                                                <div class="opline" data-id="466057" data-idParent="466056">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="ct_466058" class="LCItem  Origin" data-id="466058">
+                                            <div id="dv_466058" class="dvItem Origin" data-id="466058">
+                                                <p>466058</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره2-</span>&nbsp;به منظور برقراری امنیت و
+                                                        واپایش (کنترل مجدد) مؤثر مرزها، وزارت کشور موظف است با همکاری
+                                                        ستاد مرکزی مبارزه با قاچاق کالا و ارز، وزارت اطلاعات، سازمان
+                                                        اطلاعات سپاه پاسداران انقلاب اسلامی و فرماندهی انتظامی جمهوری
+                                                        اسلامی ایران، نسبت به شناسایی معابر و مسیرهای اصلی ورود و خروج
+                                                        کالای قاچاق از مرزهای شرقی، غربی و جنوبی کشور و تهیه اطلس
+                                                        جغرافیای جرم قاچاق در مناطق مرزی اقدام نماید. دولت موظف است
+                                                        علاوه بر اعتبارات این قانون، بودجه متناسب با اجرای اطلس مذکور را
+                                                        ظرف پنج سال به نحوی در قوانین بودجه سنواتی تخصیص دهد که ضمن
+                                                        انسداد کامل مرزهای غیر رسمی استانهای موضوع تبصره (۱) ماده (۱)
+                                                        این قانون، از فعالیت مبادی ورودی غیر مجاز زمینی و دریایی که خارج
+                                                        از نظارت گمرک جمهوری اسلامی ایران است، جلوگیری به عمل آید.</div>
+                                                <div class="opline" data-id="466058" data-idParent="466056">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="ct_466059" class="LCItem  Origin" data-id="466059">
+                                            <div id="dv_466059" class="dvItem Origin" data-id="466059">
+                                                <p>466059</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره3-</span>&nbsp;دولت موظف است با همکاري و
+                                                        مشارکت نهادهاي عمومي و انقلابي، برنامه جامع و عملياتي توسعه
+                                                        فعاليتهاي اقتصادي در مناطق مرزي و ايجاد اشتغال پايدار مرزنشينان
+                                                        با تمرکز بر کولبران، ملوانان شناورهاي سنتي باري و صيادي را با
+                                                        توجه به سياستهاي کلي آمايش سرزمين و اسناد ملي و استاني مرتبط با
+                                                        آن و متناسب با سطح محروميت و توسعه نيافتگي مناطق و تخصيص
+                                                        اعتبارات لازم در قوانين بودجه سنواتي به نحوي تدوين و اجرائي
+                                                        نمايد که تا پايان سال پنجم اجراي اين قانون، مرزنشينان واجد شرايط
+                                                        لازم، از شغل پايدار و با درآمد کافي همراه با نظام تأمين اجتماعي
+                                                        مناسب بهره‌مند باشند.<br>
+                                                </div>
+                                                <div class="opline" data-id="466059" data-idParent="466056">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="ct_466060" class="LCItem" data-id="466060" data-dateShEffect="1402/11/25"
+                                    data-dateMiEffect="2024-02-14">
+                                    <div id="dvIcons_466060" class="dvIcons" data-id="466060"><img
+                                            src="/images/SVG/relation.svg" class="relIcon"></img>
+                                        <div class="RelationErea">
+                                            <ul>
+                                                <li><span>مرتبط</span> برای : <span>مجموعه تنقيح شده قوانين و مقررات >
+                                                        <a target='_blank' href="/context/?lid=381903"> قانون اساسي
+                                                            جمهوري اسلامي ايران مصوب 1358 با اصلاحات 1368/5/6 </a> > <a
+                                                            target='_blank' href="/context/?lid=381937"> قانون اساسي
+                                                            جمهوري اسلامي ايران </a> > <a target='_blank'
+                                                            href="/context/?lid=381988"> فصل چهارم - اقتصاد و امور مالي
+                                                        </a> > <a target='_blank' href="/context/?lid=381995"> اصل چهل و
+                                                            هشتم</a> > </span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="dv_466060" class="dvItem" data-id="466060">
+                                        <p>466060</p>
+                                        <div class="original h2"><span class='label'>ماده4-</span>&nbsp;به منظور راهبری،
+                                            نظارت و هماهنگی اجرای این قانون، کارگروهی با مسؤولیت وزیر صنعت، معدن و تجارت
+                                            و با عضویت نماینده ویژه رئیس جمهور در ستاد مبارزه با قاچاق کالا و ارز، وزرای
+                                            کشور، اطلاعات، امور اقتصادی و دارایی، راه و شهرسازی و رئیس سازمان برنامه و
+                                            بودجه کشور با شرح وظایف ذیل تشکیل می‌گردد. همچنین نماینده سازمان اطلاعات
+                                            سپاه پاسداران انقلاب اسلامی و فرماندهی انتظامی جمهوری اسلامی ایران و دو نفر
+                                            از نمایندگان مجلس شورای اسلامی به انتخاب کمیسیون اقتصادی مجلس، به عنوان ناظر
+                                            و بدون حق رأی در این کارگروه عضویت خواهند داشت. نماینده سایر دستگاههای
+                                            اجرائی ملی و استانی با تشخیص رئیس کارگروه می‌توانند بدون حق رأی در جلسات
+                                            شرکت کنند:<br />
+                                            1ـ تدوین و ابلاغ دستورالعملها و شیوه‌نامه‌ها و فرایندهای اجرائی مرتبط در
+                                            چهارچوب قوانین و مقررات بالادست<br />
+                                            2ـ تعیین نوع کالای وارداتی بر اساس مقررات و سیاستهای صنعتی و تجاری دولت و
+                                            تعیین سقف سالانه میزان واردات هر یک از استانها متناسب با ظرفیت‌های تجاری و
+                                            میزان واردات کولبری و ملوانی در هر استان و با رعایت اصل چهل و هشتم (۴٨)
+                                            قانون اساسی و سیاستهای کلی آمایش سرزمین و اسناد ملی و استانی مرتبط با آن و
+                                            متناسب با سطح محرومیت و توسعه نیافتگی مناطق<br />
+                                            3ـ پیشنهاد میزان افزایش پلکانی عوارض و سود بازرگانی سالانه متعلق به کالاهای
+                                            وارداتی جهت تصویب در هیأت وزیران<br />
+                                            4ـ هماهنگی، پیگیری و نظارت بر اجرای این قانون و آیین‌نامه‌های اجرائی آن
+                                            <br />
+                                            ۵ ـ تعیین دستورالعمل اجرائی و شرایط خروج کالاها از استانهای مرزی در چهارچوب
+                                            قوانین و مقررات<br />
+                                            ۶ ـ پیشنهاد نحوه توزیع منابع موضوع ماده (۳) این قانون و پیگیری و نظارت بر آن
+                                            در چهارچوب قوانین و مقررات<br />
+                                        </div>
+                                        <div class="opline" data-id="466060" data-idParent="466046">
+                                            <div id="ShowLaw_k_466060" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li id="ct_466061" class="LCItem  Origin" data-id="466061">
+                                            <div id="dv_466061" class="dvItem Origin" data-id="466061">
+                                                <p>466061</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره1-</span>&nbsp;مصوبات کارگروه موضوع ماده
+                                                        (۴) این قانون پس از تصویب وزیر صنعت، معدن و تجارت لازم‌الاجرا
+                                                        خواهد بود.</div>
+                                                <div class="opline" data-id="466061" data-idParent="466060">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="ct_466062" class="LCItem  Origin" data-id="466062">
+                                            <div id="dv_466062" class="dvItem Origin" data-id="466062">
+                                                <p>466062</p>
+                                                <div class="original h3"><span class='ContentSpan'><span
+                                                            class='label'>تبصره2-</span>&nbsp;رئیس سازمان برنامه و بودجه
+                                                        کشور و هر یک از وزرای عضو کارگروه می‌تواند یکی از معاونان ذی ربط
+                                                        خود را با تأیید کارگروه برای شرکت در جلسات به جای خود معرفی
+                                                        نماید.</div>
+                                                <div class="opline" data-id="466062" data-idParent="466060">
+                                                    <div class="keyline"><span class='AddNode'> افزودن متن </span><span
+                                                            class='AddRelation'> ایجاد رابطه </span><span
+                                                            class='AddRelationEslah'> اصلاحیه </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="ct_466063" class="LCItem" data-id="466063">
+                                    <div id="dv_466063" class="dvItem" data-id="466063">
+                                        <p>466063</p>
+                                        <div class="original h2"><span class='label'>ماده5-</span>&nbsp;نظارت بر حسن
+                                            اجرای این قانون در استانهای مشمول بر عهده شورای ساماندهی مبادلات مرزی هر
+                                            استان است. شورای مذکور موظف است گزارش عملکرد اجرای احکام این قانون را در
+                                            بازه‌های زمانی سه ماهه به کارگروه موضوع ماده (۴) این قانون ارائه نماید.
+                                            گزارشهای مذکور در صورت تشخیص رئیس کارگروه، جهت قرائت در دستور کار جلسات
+                                            کارگروه قرار می‌گیرد.</div>
+                                        <div class="opline" data-id="466063" data-idParent="466046">
+                                            <div id="ShowLaw_k_466063" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="ct_466064" class="LCItem" data-id="466064">
+                                    <div id="dv_466064" class="dvItem" data-id="466064">
+                                        <p>466064</p>
+                                        <div class="original h2"><span class='label'>ماده6-</span>&nbsp;آیین‌نامه‌های
+                                            مقرر در این قانون ظرف سه ماه پس از لازم‌الاجرا شدن آن توسط کارگروه موضوع
+                                            ماده (۴) این قانون تهیه می‌شود و به تصویب هیأت وزیران می‌رسد.<br />
+                                            قانون فوق مشتمل بر شش ماده و نه تبصره که گزارش آن توسط کمیسیون اقتصادی به
+                                            صحن علنی تقدیم شده بود، پس از تصویب در جلسه علنی روز چهارشنبه مورخ بیست و
+                                            پنجم بهمن ماه یکهزار و چهارصد و دو مجلس در تاریخ ۱۴۰۲/۱۲/۱۶ به تأیید شورای
+                                            نگهبان رسید<br />
+                                            رئيس مجلس شوراي اسلامي ـ محمدباقر قاليباف<br />
+                                            <br />
+                                        </div>
+                                        <div class="opline" data-id="466064" data-idParent="466046">
+                                            <div id="ShowLaw_k_466064" class="keyline"><span class='AddNode'> افزودن متن
+                                                </span><span class='AddRelation'> ایجاد رابطه </span><span
+                                                    class='AddRelationEslah'> اصلاحیه </span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 
-<link rel="stylesheet" href="/Component/wyswyg/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/froala_editor.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/froala_style.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/code_view.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/draggable.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/colors.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/emoticons.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/image_manager.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/image.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/line_breaker.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/table.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/char_counter.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/video.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/fullscreen.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/file.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/quick_insert.css">
-<link rel="stylesheet" href="/Component/wyswyg/css/plugins/help.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
-
-<link href="/Style/Icons.css" rel="stylesheet" />
-<script src="/Scripts/Js/Context.js"></script>
-
-<div id="ShowLaw_TreeOfLaw" class="PrintLaw" data-selected="466047" data-idLaw="466047"> <ul><li id="ct_466046" class="LCItem" data-id="466046"><div id="dv_466046" class="dvItem" data-id="466046"><div class="original h1"><span class='label'>قانون ساماندهي و نظارت بر تجارت مرزي (كولبري و ملواني) و ايجاد اشتغال پايدار مرزنشينان</span><br />&nbsp;</div><div class="opline" data-id="466046" data-idParent="466046"><div id="ShowLaw_k_466046" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466047" class="LCItem" data-id="466047"><div id="dv_466047" class="dvItem" data-id="466047"><p>466047</p><div class="original h2"><span class='label'>ماده1-</span>&nbsp;به منظور رونق اقتصاد مناطق مرزی، ایجاد شفافیت و رصدپذیر نمودن واردات، توزیع و عرضه کالاهای مبادله مرزنشینی، تقویت معیشت مرزنشینان و کاهش مبادلات غیر رسمی در مرزهای زمینی و آبی، واردات کالا از طریق رویه‌های ملوانی (ته لنجی) و کولبری منطبق با تعاریف زیر، به مدت پنج سال از زمان ابلاغ آیین‌نامه‌های موضوع ماده (۶) این قانون مطابق با ترتیبات این قانون مجاز و پس از اتمام مدت مذکور واردات کالا، تابع قوانین و مقررات کشور می‌باشد.</div><div class="opline" data-id="466047" data-idParent="466046"><div id="ShowLaw_k_466047" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466048" class="LCItem  Origin" data-id="466048"><div id="dv_466048" class="dvItem Origin" data-id="466048"><p>466048</p><div class="original h3"><span class='ContentSpan'><span class='label'>الف ـ </span>&nbsp;رویه ملوانی (ته لنجی): واردات کالا از طریق شناورهای سنتی و فلزی، با ساختار لنج و با ظرفیت ناخالص کمتر از (۵۰۰) تن در بنادر جنوبی کشور که قوانین و مقررات واردات در آن رعایت نمی‌شود و صرفاً بر اساس ترتیبات این قانون مجاز به واردات کالا می‌باشد.</div><div class="opline" data-id="466048" data-idParent="466047"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466049" class="LCItem  Origin" data-id="466049"><div id="dv_466049" class="dvItem Origin" data-id="466049"><p>466049</p><div class="original h4"><span class='ContentSpan'><span class='label'>تبصره ـ </span>&nbsp;ورود کالای همراه ملوانان، خدمه و کارکنان شناورهای مذکور (موضوع قانون ساماندهی مبادلات مرزی مصوب 6/7/1384) سالانه تا سقف ۱۲۰۰ یورو ارزش کالا برای هر مشمول (حداکثر ۵۰۰ یورو ارزش کالا در هر سفر) با رعایت مقررات و قوانین مربوط، مجاز است.</div><div class="opline" data-id="466049" data-idParent="466048"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li><li id="ct_466050" class="LCItem  Origin" data-id="466050"><div id="dv_466050" class="dvItem Origin" data-id="466050"><p>466050</p><div class="original h3"><span class='ContentSpan'><span class='label'>ب ـ 
-</span>&nbsp;رويه کولبري: واردات کالا از طريق معابر و مرزهاي زميني کشور که کالا در معبر مرزي توسط مرزنشينان حمل شده و قوانين و مقررات واردات در آن رعايت نمي‌شود و صرفاً بر اساس ترتيبات اين قانون مجاز به واردات کالا مي‌باشد.<br></div><div class="opline" data-id="466050" data-idParent="466047"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466051" class="LCItem  Origin" data-id="466051"><div id="dv_466051" class="dvItem Origin" data-id="466051"><p>466051</p><div class="original h4"><span class='ContentSpan'><span class='label'>تبصره1-</span>&nbsp;آيين‌نامه احراز صلاحيت اشخاص، استانها و شهرستانهاي مشمول اين قانون توسط هيأت وزيران تصويب و ابلاغ مي‌شود. انجام تشريفات قانوني واردات کالاهاي موضوع اين قانون، در چهارچوب مصوبه هيأت وزيران توسط واحدهاي توليدي و صنفي مستقر در مناطق مرزي مشمول نيز امکان‌پذير مي‌باشد.<br>
-</div><div class="opline" data-id="466051" data-idParent="466050"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466052" class="LCItem  Origin" data-id="466052" data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14"><div id="dvIcons_466052" class="dvIcons" data-id="466052"><img src="/images/SVG/relation.svg" class="relIcon"></img><div class="RelationErea"><ul><li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه رسمي- سال 1392   > <a target='_blank' href="/context/?lid=359452"> قانون مبارزه با قاچاق كالا و ارز  </a> > <a target='_blank' href="/context/?lid=359459"> فصل دوم ـ پيشگيري از قاچاق
-  </a> > <a target='_blank' href="/context/?lid=359460"> ماده6 ـ
-</a> > </span></li><li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه رسمي- سال 1392   > <a target='_blank' href="/context/?lid=359452"> قانون مبارزه با قاچاق كالا و ارز  </a> > <a target='_blank' href="/context/?lid=359459"> فصل دوم ـ پيشگيري از قاچاق
-  </a> > <a target='_blank' href="/context/?lid=359467"> ماده13ـ
-</a> > </span></li></ul></div></div><div id="dv_466052" class="dvItem Origin" data-id="466052" data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14"><p>466052</p><div class="original h4"><span class='ContentSpan'><span class='label'>تبصره2ـ </span>&nbsp;سقف و ارزش کل واردات کالا از طریق رویه های موضوع این ماده، سالانه به میزان حداکثر ده درصد (10%) ارزش واردات کل کشور به مأخذ سال قبل، تعیین می‌شود و انجام آن منوط به ثبت آماری در سامانه جامع یکپارچه‌سازی و نظارت بر فرایند تجارت (موضوع بند «الف» ماده (۶) قانون مبارزه با قاچاق کالا و ارز مصوب ۱۳۹۲/۱۰/۳ و اصلاحات بعدی)، اخذ شناسه کالا و شناسه رهگیری (موضوع ماده (۱۳) قانون مبارزه با قاچاق کالا و ارز)، ثبت اطلاعات در سامانه جامع انبارها (موضوع بند «ث» ماده (۶) قانون مبارزه با قاچاق کالا و ارز) و تعیین منشأ ارز کالاهای وارداتی می‌باشد.<br>
-پس از سال پنجم اجرای این قانون، تولیدکنندگان و اصناف مستقر در شهرستانهای مرزی مشمول میتوانند با تخفیف سی درصدی (30%) از عوارض و حقوق ورودی، سالانه تا سقف یک درصد (1%) ارزش واردات کل کشور به مأخذ سال قبل و با رعایت ترتیبات مندرج در این تبصره نسبت به واردات کالا اقدام نمایند.<br>
-</div><div class="opline" data-id="466052" data-idParent="466050"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li></ul></li><li id="ct_466053" class="LCItem" data-id="466053"><div id="dv_466053" class="dvItem" data-id="466053"><p>466053</p><div class="original h2"><span class='label'>ماده2-</span>&nbsp;به منظور هدايت تدريجي مبادلات موضوع اين قانون در مرزها به چهارچوب تجارت رسمي، کالاهاي وارداتي از طريق مبادلات موضوع اين قانون در مرحله ترخيص کالا صرفاً مشمول پرداخت پنجاه درصد (50%) ميزان عوارض و ماليات بر ارزش افزوده تعيين شده براي ورود قطعي کالا هستند و در سال اول اجراي اين قانون از ساير عوارض و مالياتها معاف مي‌باشند. در مرحله فروش کالا توسط مشمولين اين قانون، مابه‌التفاوت ماليات و عوارض فروش با ماليات و عوارض خريد موضوع قانون ماليات بر ارزش افزوده، به عنوان اعتبار مالياتي ارزش افزوده براي ايشان لحاظ مي‌شود لکن مابقى زنجيره تبادل کالا در کشور موظف به پرداخت کامل آن مي‌باشند.<br/>
-</div><div class="opline" data-id="466053" data-idParent="466046"><div id="ShowLaw_k_466053" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466054" class="LCItem  Origin" data-id="466054"><div id="dv_466054" class="dvItem Origin" data-id="466054"><p>466054</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره1-</span>&nbsp;اعمال پلکانی حقوق گمرکی و سایر عوارض قانونی از سال دوم اجرای این قانون سالانه به میزان بیست درصد (۲0%) مقرر در رویه تجاری و اعمال معافیت کامل یا پلکانی سود بازرگانی توسط دولت برای کالاهای وارداتی موضوع این ماده (به گونه‌ای که مزیت واردات موضوع این قانون نسبت به رویه واردات رسمی لحاظ گردد) مطابق آیین‌نامه‌ها یا دستورالعملها و شاخصهایی که در چهارچوب قانون به تصویب هیأت وزیران می‌رسد، در طول اجرای این قانون مجاز است.</div><div class="opline" data-id="466054" data-idParent="466053"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466055" class="LCItem  Origin" data-id="466055" data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14"><div id="dvIcons_466055" class="dvIcons" data-id="466055"><img src="/images/SVG/relation.svg" class="relIcon"></img><div class="RelationErea"><ul><li><span>مرتبط</span> برای: <span>مجموعه‌هاي روزنامه رسمي- سال 1390   > <a target='_blank' href="/context/?lid=343445"> قانون امور گمركي  </a> > <a target='_blank' href="/context/?lid=343446"> بخش اول ـ تعاريف، سازمان و كليات
-  </a> > <a target='_blank' href="/context/?lid=343447"> فصل اول ـ تعاريف
-  </a> > <a target='_blank' href="/context/?lid=343448"> ماده 1ـ
-</a> > </span></li></ul></div></div><div id="dv_466055" class="dvItem Origin" data-id="466055" data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14"><p>466055</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره2-</span>&nbsp;امهال پرداخت مالیات بر ارزش افزوده متعلق به کالاهای وارداتی موضوع این ماده، با اخذ تضامین معتبر (موضوع بند «ح» ماده (۱) قانون امور گمرکی مصوب ۱۳۹۰/۸/۲۲ و اصلاحات بعدی آن) و حداکثر به مدت سه ماه از تاریخ ترخیص قطعی کالا از گمرک مجاز می‌باشد.امهال پرداخت مالیات بر ارزش افزوده متعلق به کالاهای وارداتی موضوع این ماده، با اخذ تضامین معتبر (موضوع بند «ح» ماده (۱) قانون امور گمرکی مصوب ۱۳۹۰/۸/۲۲ و اصلاحات بعدی آن) و حداکثر به مدت سه ماه از تاریخ ترخیص قطعی کالا از گمرک مجاز می‌باشد.<br>
-</div><div class="opline" data-id="466055" data-idParent="466053"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li><li id="ct_466056" class="LCItem" data-id="466056"><div id="dv_466056" class="dvItem" data-id="466056"><p>466056</p><div class="original h2"><span class='label'>ماده3-</span>&nbsp;کليه درآمدهاي گمرکي و مالياتي حاصل از اجراي اين قانون به حسابي مخصوص نزد خزانه‌داري کل کشور واريز و به صورت تخصيص صددرصد (100%) و مازاد بر اعتبارات مندرج در قوانين بودجه سنواتي در قالب رديف مستقل در ارقام بودجه لحاظ و به همان استان مرزي اختصاص و شصت درصد (60%) آن براي تقويت معيشت و اشتغال مرزنشينان (پرداختهاي حمايتي هدفمند، تأمين زير ساختهاي مورد نياز حوزه اشتغال و ايجاد اشتغال پايدار)، بيست درصد (20%) براي زيرساختهاي اقتصاد مرز (تجهيز بازارچه‌هاي مرزي، تقويت و تجهيز بنادر و گمرکات کوچک) و بيست درصد (20%) براي تقويت زيرساخت‌هاي مربوط به امنيت و مبارزه با قاچاق (انسداد معابر و خلأهاي مرزي، خورهاي غير مجاز و آلوده به قاچاق کالا)، در مناطق مشمول هزينه مي‌گردد.<br/>
-</div><div class="opline" data-id="466056" data-idParent="466046"><div id="ShowLaw_k_466056" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466057" class="LCItem  Origin" data-id="466057"><div id="dv_466057" class="dvItem Origin" data-id="466057"><p>466057</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره1-</span>&nbsp;دولت موظف است ظرف شش ماه پس از تصويب اين قانون، اقدامات قانوني لازم جهت تهيه و تصويب برنامه آمايش و تحول در بازارچه‌هاي مرزي و برنامه توسعه و تجهيز بنادر کوچک استانهاي ساحلي جنوب کشور را به عمل آورد.<br>
-</div><div class="opline" data-id="466057" data-idParent="466056"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466058" class="LCItem  Origin" data-id="466058"><div id="dv_466058" class="dvItem Origin" data-id="466058"><p>466058</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره2-</span>&nbsp;به منظور برقراری امنیت و واپایش (کنترل مجدد) مؤثر مرزها، وزارت کشور موظف است با همکاری ستاد مرکزی مبارزه با قاچاق کالا و ارز، وزارت اطلاعات، سازمان اطلاعات سپاه پاسداران انقلاب اسلامی و فرماندهی انتظامی جمهوری اسلامی ایران، نسبت به شناسایی معابر و مسیرهای اصلی ورود و خروج کالای قاچاق از مرزهای شرقی، غربی و جنوبی کشور و تهیه اطلس جغرافیای جرم قاچاق در مناطق مرزی اقدام نماید. دولت موظف است علاوه بر اعتبارات این قانون، بودجه متناسب با اجرای اطلس مذکور را ظرف پنج سال به نحوی در قوانین بودجه سنواتی تخصیص دهد که ضمن انسداد کامل مرزهای غیر رسمی استانهای موضوع تبصره (۱) ماده (۱) این قانون، از فعالیت مبادی ورودی غیر مجاز زمینی و دریایی که خارج از نظارت گمرک جمهوری اسلامی ایران است، جلوگیری به عمل آید.</div><div class="opline" data-id="466058" data-idParent="466056"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466059" class="LCItem  Origin" data-id="466059"><div id="dv_466059" class="dvItem Origin" data-id="466059"><p>466059</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره3-</span>&nbsp;دولت موظف است با همکاري و مشارکت نهادهاي عمومي و انقلابي، برنامه جامع و عملياتي توسعه فعاليتهاي اقتصادي در مناطق مرزي و ايجاد اشتغال پايدار مرزنشينان با تمرکز بر کولبران، ملوانان شناورهاي سنتي باري و صيادي را با توجه به سياستهاي کلي آمايش سرزمين و اسناد ملي و استاني مرتبط با آن و متناسب با سطح محروميت و توسعه نيافتگي مناطق و تخصيص اعتبارات لازم در قوانين بودجه سنواتي به نحوي تدوين و اجرائي نمايد که تا پايان سال پنجم اجراي اين قانون، مرزنشينان واجد شرايط لازم، از شغل پايدار و با درآمد کافي همراه با نظام تأمين اجتماعي مناسب بهره‌مند باشند.<br>
-</div><div class="opline" data-id="466059" data-idParent="466056"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li><li id="ct_466060" class="LCItem" data-id="466060" data-dateShEffect="1402/11/25" data-dateMiEffect="2024-02-14"><div id="dvIcons_466060" class="dvIcons" data-id="466060"><img src="/images/SVG/relation.svg" class="relIcon"></img><div class="RelationErea"><ul><li><span>مرتبط</span> برای : <span>مجموعه تنقيح شده قوانين و مقررات   > <a target='_blank' href="/context/?lid=381903"> قانون اساسي جمهوري اسلامي ايران مصوب 1358 با اصلاحات 1368/5/6  </a> > <a target='_blank' href="/context/?lid=381937"> قانون اساسي جمهوري اسلامي ايران  </a> > <a target='_blank' href="/context/?lid=381988"> فصل چهارم - اقتصاد و امور مالي  </a> > <a target='_blank' href="/context/?lid=381995"> اصل چهل و هشتم</a> > </span></li></ul></div></div><div id="dv_466060" class="dvItem" data-id="466060"><p>466060</p><div class="original h2"><span class='label'>ماده4-</span>&nbsp;به منظور راهبری، نظارت و هماهنگی اجرای این قانون، کارگروهی با مسؤولیت وزیر صنعت، معدن و تجارت و با عضویت نماینده ویژه رئیس جمهور در ستاد مبارزه با قاچاق کالا و ارز، وزرای کشور، اطلاعات، امور اقتصادی و دارایی، راه و شهرسازی و رئیس سازمان برنامه و بودجه کشور با شرح وظایف ذیل تشکیل می‌گردد. همچنین نماینده سازمان اطلاعات سپاه پاسداران انقلاب اسلامی و فرماندهی انتظامی جمهوری اسلامی ایران و دو نفر از نمایندگان مجلس شورای اسلامی به انتخاب کمیسیون اقتصادی مجلس، به عنوان ناظر و بدون حق رأی در این کارگروه عضویت خواهند داشت. نماینده سایر دستگاههای اجرائی ملی و استانی با تشخیص رئیس کارگروه می‌توانند بدون حق رأی در جلسات شرکت کنند:<br/>
-1ـ تدوین و ابلاغ دستورالعملها و شیوه‌نامه‌ها و فرایندهای اجرائی مرتبط در چهارچوب قوانین و مقررات بالادست<br/>
-2ـ تعیین نوع کالای وارداتی بر اساس مقررات و سیاستهای صنعتی و تجاری دولت و تعیین سقف سالانه میزان واردات هر یک از استانها متناسب با ظرفیت‌های تجاری و میزان واردات کولبری و ملوانی در هر استان و با رعایت اصل چهل و هشتم (۴٨) قانون اساسی و سیاستهای کلی آمایش سرزمین و اسناد ملی و استانی مرتبط با آن و متناسب با سطح محرومیت و توسعه نیافتگی مناطق<br/>
-  3ـ پیشنهاد میزان افزایش پلکانی عوارض و سود بازرگانی سالانه متعلق به کالاهای وارداتی جهت تصویب در هیأت وزیران<br/>
-4ـ هماهنگی، پیگیری و نظارت بر اجرای این قانون و آیین‌نامه‌های اجرائی آن <br/>
-۵ ـ تعیین دستورالعمل اجرائی و شرایط خروج کالاها از استانهای مرزی در چهارچوب قوانین و مقررات<br/>
-۶ ـ پیشنهاد نحوه توزیع منابع موضوع ماده (۳) این قانون و پیگیری و نظارت بر آن در چهارچوب قوانین و مقررات<br/>
-</div><div class="opline" data-id="466060" data-idParent="466046"><div id="ShowLaw_k_466060" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div><ul><li id="ct_466061" class="LCItem  Origin" data-id="466061"><div id="dv_466061" class="dvItem Origin" data-id="466061"><p>466061</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره1-</span>&nbsp;مصوبات کارگروه موضوع ماده (۴) این قانون پس از تصویب وزیر صنعت، معدن و تجارت لازم‌الاجرا خواهد بود.</div><div class="opline" data-id="466061" data-idParent="466060"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466062" class="LCItem  Origin" data-id="466062"><div id="dv_466062" class="dvItem Origin" data-id="466062"><p>466062</p><div class="original h3"><span class='ContentSpan'><span class='label'>تبصره2-</span>&nbsp;رئیس سازمان برنامه و بودجه کشور و هر یک از وزرای عضو کارگروه می‌تواند یکی از معاونان ذی ربط خود را با تأیید کارگروه برای شرکت در جلسات به جای خود معرفی نماید.</div><div class="opline" data-id="466062" data-idParent="466060"><div class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li><li id="ct_466063" class="LCItem" data-id="466063"><div id="dv_466063" class="dvItem" data-id="466063"><p>466063</p><div class="original h2"><span class='label'>ماده5-</span>&nbsp;نظارت بر حسن اجرای این قانون در استانهای مشمول بر عهده شورای ساماندهی مبادلات مرزی هر استان است. شورای مذکور موظف است گزارش عملکرد اجرای احکام این قانون را در بازه‌های زمانی سه ماهه به کارگروه موضوع ماده (۴) این قانون ارائه نماید. گزارشهای مذکور در صورت تشخیص رئیس کارگروه، جهت قرائت در دستور کار جلسات کارگروه قرار می‌گیرد.</div><div class="opline" data-id="466063" data-idParent="466046"><div id="ShowLaw_k_466063" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li><li id="ct_466064" class="LCItem" data-id="466064"><div id="dv_466064" class="dvItem" data-id="466064"><p>466064</p><div class="original h2"><span class='label'>ماده6-</span>&nbsp;آیین‌نامه‌های مقرر در این قانون ظرف سه ماه پس از لازم‌الاجرا شدن آن توسط کارگروه موضوع ماده (۴) این قانون تهیه می‌شود و به تصویب هیأت وزیران می‌رسد.<br/>
-قانون فوق مشتمل بر شش ماده و نه تبصره که گزارش آن توسط کمیسیون اقتصادی به صحن علنی تقدیم شده بود، پس از تصویب در جلسه علنی روز چهارشنبه مورخ بیست و پنجم بهمن ماه یکهزار و چهارصد و دو مجلس در تاریخ ۱۴۰۲/۱۲/۱۶ به تأیید شورای نگهبان رسید<br/>
-رئيس مجلس شوراي اسلامي ـ محمدباقر قاليباف<br/>
-<br/>
-</div><div class="opline" data-id="466064" data-idParent="466046"><div id="ShowLaw_k_466064" class="keyline"><span class='AddNode'> افزودن متن </span><span class='AddRelation' > ایجاد رابطه </span><span class='AddRelationEslah'> اصلاحیه </span></div></div></div></li></ul></li></ul></div>
-test
-<img class="BackToTopKey" data-backpoint="0" src="/images/return-to-the-top-14.svg" />
+                <img class="BackToTopKey" data-backpoint="0" src="/images/return-to-the-top-14.svg" />
 
 
 
-<script type="text/javascript" src="/Component/wyswyg/js/codemirror.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/xml.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/froala_editor.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/align.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/char_counter.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/code_beautifier.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/code_view.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/colors.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/draggable.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/emoticons.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/entities.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/file.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/font_size.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/font_family.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/fullscreen.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/image.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/image_manager.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/line_breaker.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/inline_style.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/link.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/lists.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/paragraph_format.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/paragraph_style.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/quick_insert.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/quote.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/table.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/save.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/url.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/video.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/help.min.js"></script>
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/print.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/codemirror.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/xml.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/froala_editor.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/align.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/char_counter.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/code_beautifier.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/code_view.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/colors.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/draggable.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/emoticons.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/entities.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/file.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/font_size.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/font_family.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/fullscreen.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/image.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/image_manager.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/line_breaker.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/inline_style.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/link.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/lists.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/paragraph_format.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/paragraph_style.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/quick_insert.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/quote.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/table.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/save.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/url.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/video.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/help.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/print.min.js"></script>
 
 
-<script type="text/javascript" src="/Component/wyswyg/js/plugins/word_paste.min.js"></script>
+                <script type="text/javascript" src="/Component/wyswyg/js/plugins/word_paste.min.js"></script>
 
             </div>
-  
+
         </div>
-        </form>
+    </form>
+
+
+    <script>
+        let menuContainer = $('.TableCell.Search')
+
+$(document).ready(function () {
+    menuContainer.prepend('<label for="customToggler" class="customToggler"> <input type="checkbox" id="customToggler"/> </label>')
+});
+$(document).ready(function () {
+    $('body').prepend('<label for="customTogglerTree" class="customTogglerTree"> <input type="checkbox" id="customTogglerTree"/> </label>')
+});
+
+    </script>
 </body>
+
 </html>
