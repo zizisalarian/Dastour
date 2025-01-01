@@ -278,22 +278,27 @@
         right: 0;
         background-color: #fff;
         border: 2px solid #ddd;
-        width: fit-content;
+        /* width: fit-content; */
         font-size: 0.7rem;
         padding: 0.2rem 1rem;
         border-radius: 0.5rem 0 0 0.5rem;
         z-index: 9;
     }
+    .customTogglerTree svg{
+        width: 30px;
+        height: 30px;
+        transform: scaleX(-1);
+    }
     .customTogglerTree::after{
-        content: 'نمایش درختی';
+        /* content: 'نمایش درختی'; */
         display: inline-block !important;
     }
-    .customTogglerTree::before{
+    /* .customTogglerTree::before{
         content: '\f100' !important;
         display: inline-block !important;
         font-family: 'Awesome' !important;
         transition: 0.4s;
-    }
+    } */
     .customTogglerTree:has(input:checked)::before{
         transform: rotate(180deg);
     }
