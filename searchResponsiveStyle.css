@@ -274,20 +274,41 @@
     .customTogglerTree{
       display: flex;
         position: absolute;
-        top: 0;
+        top: 3px;
         right: 0;
-        background-color: #fff;
-        border: 2px solid #ddd;
+        background-color: #4193ff;
+        /* border: 2px solid #ddd; */
         /* width: fit-content; */
         font-size: 0.7rem;
-        padding: 0.2rem 1rem;
-        border-radius: 0.5rem 0 0 0.5rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.2rem 0 0 0.2rem;
         z-index: 9;
+        position: relative;
+        width: fit-content;
+
+        &::after{
+            content: '';
+            display: inline-block;
+            width:0 ;
+            height: 0;
+            border-right: 9px solid #4193ff;
+            border-left: 8px solid transparent;
+            border-bottom: 9px solid #4193ff;
+            border-top: 8px solid transparent;
+            position: absolute;
+            right: calc(100% - 9px);
+            top: 50%;
+            transform:translateY(-50%) rotate(135deg);
+            border-bottom-right-radius: 5px;
+        }
     }
     .customTogglerTree svg{
-        width: 30px;
-        height: 30px;
+        width: 18px;
+        height: 20px;
         transform: scaleX(-1);
+        path{
+            fill: #fff
+        }
     }
     .customTogglerTree::after{
         /* content: 'نمایش درختی'; */
@@ -304,7 +325,8 @@
     }
     .LawTree{
         position: absolute;
-        min-height: 100vh;
+        /* min-height: 100vh; */
+        height: fit-content;
         right: -100%;
         transition: 0.4s;
         z-index: 99;
