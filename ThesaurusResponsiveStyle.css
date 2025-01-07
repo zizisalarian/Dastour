@@ -1,0 +1,208 @@
+html{
+    scroll-behavior: smooth;
+} 
+.customTogglerTree{
+    display: none;
+}
+.customToggler{
+    display: none !important;
+}
+.goup{
+    display: none;
+}
+
+@media (max-width:768px){
+    *{
+        box-sizing: border-box !important;
+
+    }
+    body .Header{
+        padding: 0 !important;
+    }
+    .TableCell.SiteName{
+        position: absolute;
+        top: 0.6rem;
+        right: 3rem;
+        z-index: 999;
+        width: fit-content;
+        img{
+            width: 5rem;
+        }
+        
+    }
+    div .Header img.SiteName{
+        width: 5rem !important;
+    }
+    .customToggler{
+        display: block !important;
+        input{
+            display: none !important;
+        }
+    }
+    .customToggler::before{
+        content: '\f0c9' !important;
+        display: inline-block !important;
+        font-family: 'Awesome' !important;
+    }
+    .TableCell.Search{
+        position: relative !important;
+        background-color: #eee !important;
+        width: 100% !important;
+        z-index: 9 !important;
+        right: 0 !important;
+        top: 0 !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 1rem !important;
+    justify-content: space-between !important;
+    }
+    .TableCell.Search .HeaderLink{
+        display: none !important;
+    }
+    .TableCell.Search:has(input:checked) .HeaderLink{
+        display: flex !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        background: #fff !important;
+        width: 100% !important;
+        height: fit-content !important;
+        right: 0% !important;
+        top:4rem !important;
+        padding: 0 0.5rem !important;
+
+        a{
+            padding: 0.5rem !important;
+            
+            &:nth-child(4n){
+                background-color: #eee !important;
+
+            }
+        }
+        
+    }
+    .Header div.SearchPanel{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: stretch !important;
+        button.SearchButton{
+            height: 100% !important;
+            width: auto !important;
+            aspect-ratio: 1/1.3 !important;
+            border-radius: 2px  !important;
+
+            &::before{
+                font-size: 0.7rem;
+            }
+        }
+        input[type="text"].SearchBox{
+            border-radius: 2px  !important;
+        }
+    }
+    
+    .SearchSetting{
+        margin: 0 !important;
+    }
+    .SearchSetting .Box span.area{
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+    .SearchSetting select{
+        width: auto !important;
+        font-size: 0.7rem !important;
+    }
+    .SearchSetting input.datePiker{
+        padding: 0.1rem !important;
+    }
+    .SearchSetting input.Text{
+        font-size: 0.8rem !important;
+        padding: 0.4rem !important;
+    }
+    .SearchSetting input{
+        width: 48% !important;
+        padding: 0.5rem !important;
+        flex-grow: 1 !important;
+        max-width: 14rem !important;
+    }
+    Ul.FloatTab{
+        position: absolute !important;
+        left: 0 !important;
+    }
+    Ul.FloatTab li{
+        padding: 0.5rem !important;
+        font-size: 0.7rem !important;
+    }
+    .FloatTab li select{
+        width: 7rem !important;
+        font-size: 0.8rem !important;
+        padding: 0.1rem 0.5rem !important;
+    }
+    Ul.FloatTab li.Sort{
+        top: 50%
+        
+    }
+    Ul.FloatTab li.Number{
+        top: 43%
+        
+    }
+    Ul.FloatTab li.Sort:before{
+        padding-left: 0.7rem !important;
+        font-size: 1rem !important;
+
+    }
+    Ul.FloatTab li.Number:before{
+        padding-left: 0.7rem !important;
+        font-size: 1rem !important;
+    }
+
+
+    /* TAbles */
+    .Table.W80{
+        display: flex;flex-direction: column;
+        >div{
+            width: 100%;
+        }
+    }
+    .GeneralBox#SearchResult{
+        max-height: fit-content;
+        .SearchReasult{
+            
+            min-height: 100px !important;
+        }
+    }
+    .GeneralBox#ShowTree{
+        max-height: fit-content;
+        min-height: 100px !important;
+    }
+    .Head.ThesaurusSearch input{
+        width: 100%;
+    }
+    .Head input{
+        width: 100%;
+    }
+    .SearchReasult ul li{
+        font-size: 11pt;
+    }
+    .scrolled .goup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        left: 5px;
+        bottom: 20px;
+        background: #4fadd8;
+        &::before{
+            content: '\f106' !important;
+            display: inline-block !important;
+            font-family: 'Awesome' !important;
+            color: #fff;
+            font-size: 1.2rem;
+            }
+            
+    }
+}
